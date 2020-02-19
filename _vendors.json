@@ -6,10 +6,9 @@
 		"bower_components/linearicons/dist/web-font/fonts/**"
 	],
 	"js": [
-		"node_modules/pixi.js/dist/pixi.js"
+		"bower_components/swiper/package/js/swiper.js"
 	],
 	"css": [
-		"bower_components/swiper/package/css/swiper.css",
-		"bower_components/select2/dist/css/select2.css"
+		"bower_components/swiper/package/css/swiper.css"
 	]
 }
