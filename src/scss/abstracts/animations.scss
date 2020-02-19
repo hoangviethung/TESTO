@@ -21,3 +21,9 @@
 		background-position: 0% 0%;
 	}
 }
+
+@keyframes background {
+	to {
+		background-position-x: -100%;
+	}
+}
