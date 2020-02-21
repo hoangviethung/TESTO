@@ -1,32 +1,30 @@
 module.exports = () => {
 	return new Promise((resolve, reject) => {
-		let loading = document.getElementById('loading-container');
-		let progressPercentage = loading.querySelector('#progress-percentage');
-		let progressBar = loading.querySelector('#progress-bar');
+		let loading = document.getElementById('loading');
+		let progress = document.getElementById('progress');
+		let progressStat = document.getElementById('progstat');
 		let images = document.images;
 		let imagesLength = images.length;
 		let counter = 0;
 
 		const turnOffLoadingScreen = () => {
-			if (loading) {
-				setTimeout(function() {
-					// loading.style.opacity = '0';
-					// loading.parentNode.removeChild(loading);
-					document.querySelector('body').classList.add('show-page');
-					resolve();
-				}, 1000)
-			}
+			loading.style.opacity = '0';
+			// loading.style.pointerEvents = 'none';
+			setTimeout(function() {
+				loading.style.display = 'none';
+				loading.parentNode.removeChild(loading);
+				document.querySelector('body').classList.add('show-page');
+				resolve();
+			}, 1000)
 		};
 
 		const progressing = () => {
 			let n = Math.round(100 / imagesLength * (counter += 1));
-			progressBar.style.width = `${n}%`;
-			progressPercentage.innerHTML = `${n}`;
-			if (counter === imagesLength) {
+			if (progress.style.width = `${n}`, progressStat.innerHTML = `${n}`, counter === imagesLength) {
 				return turnOffLoadingScreen();
 			}
 		};
-
+		
 		if (loading) {
 			if (imagesLength === 0) {
 				return turnOffLoadingScreen();

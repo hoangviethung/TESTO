@@ -24,7 +24,6 @@
 	display: inline-block;
 }
 
-
 .d-f {
 	display: flex;
 }
@@ -41,16 +40,8 @@
 	align-items: center;
 }
 
-.ai-fe {
-	align-items: flex-end;
-}
-
 .as-c {
 	align-self: center;
-}
-
-.as-fe {
-	align-self: flex-end;
 }
 
 .jc-c {
@@ -66,9 +57,9 @@
 }
 
 .fcc {
-	display: flex;
+	display        : flex;
 	justify-content: center;
-	align-items: center;
+	align-items    : center;
 }
 
 // List, ul, ol, dl
@@ -92,11 +83,23 @@
 
 .mx-at {
 	margin-right: auto;
-	margin-left: auto;
+	margin-left : auto;
 }
 
 .bd-0 {
 	border: 0;
+}
+
+.w-100 {
+	width: 100%;
+}
+
+.w-50 {
+	width: 50%;
+}
+
+.bd-main {
+	border: 1px solid map-get($mau, main);
 }
 
 .ov-h {
@@ -131,10 +134,14 @@
 	text-align: center;
 }
 
-.td-u {
-	text-decoration: underline;
+.ta-r {
+	text-align: center;
 }
 
 .op-50 {
 	opacity: 50%;
+}
+
+.td-u {
+	text-decoration: underline;
 }
