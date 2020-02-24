@@ -1,7 +1,32 @@
 .btn {
-	display: inline-flex;
+	display        : inline-flex;
 	justify-content: center;
-	align-items: center;
-	border: 0;
-	padding: 0;
+	align-items    : center;
+	border         : 0;
+	padding        : 0;
+
+	&.view-more {
+		position     : relative;
+		color        : #ffffff;
+		height       : 30px;
+		padding      : 0 25px 0 10px;
+		background   : map-get($mau, main);
+		border-radius: 15px;
+		font-size    : 11px;
+
+		&:after {
+			font-family   : Linearicons-Free;
+			content       : '\e876';
+			font-style    : normal;
+			font-variant  : normal;
+			font-weight   : 700;
+			line-height   : 1;
+			text-transform: none;
+			position      : absolute;
+			right         : 8px;
+			top           : 50%;
+			transform     : translateY(-50%);
+			font-size     : 10px;
+		}
+	}
 }

@@ -22,6 +22,7 @@
     "object-fit-images": "*",
     "gsap": "^3.0.2",
     "image-map-resizer": "^1.0.10",
-    "select2": "^4.0.12"
+    "select2": "^4.0.12",
+    "linearicons": "^1.0.2"
   }
 }

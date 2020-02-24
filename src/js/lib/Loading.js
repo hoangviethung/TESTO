@@ -10,8 +10,8 @@ module.exports = () => {
 		const turnOffLoadingScreen = () => {
 			if (loading) {
 				setTimeout(function() {
-					// loading.style.opacity = '0';
-					// loading.parentNode.removeChild(loading);
+					loading.style.opacity = '0';
+					loading.parentNode.removeChild(loading);
 					document.querySelector('body').classList.add('show-page');
 					resolve();
 				}, 1000)

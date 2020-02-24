@@ -66,9 +66,9 @@
 }
 
 .fcc {
-	display: flex;
+	display        : flex;
 	justify-content: center;
-	align-items: center;
+	align-items    : center;
 }
 
 // List, ul, ol, dl
@@ -79,6 +79,10 @@
 // Padding
 .pl-0 {
 	padding-left: 0;
+}
+
+.p-0 {
+	padding: 0;
 }
 
 // Margin
@@ -92,7 +96,7 @@
 
 .mx-at {
 	margin-right: auto;
-	margin-left: auto;
+	margin-left : auto;
 }
 
 .bd-0 {
