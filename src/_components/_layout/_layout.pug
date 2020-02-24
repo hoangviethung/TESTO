@@ -12,13 +12,16 @@ html(lang="en")
 		link(rel="stylesheet", href="./css/core.min.css")
 		link(rel="stylesheet", href="./css/main.min.css")
 	body
-		#loading
-			.logo-loader
-				img(src="./assets/loading.gif")
-			.progstat-wrapper Loading:
-				span#progstat 0
-				| %
-			#progress
+		#loading-container
+			.loading-wrapper
+				#loading-logo
+					img(src="./assets/logo.svg")
+				.progress
+					#progress-bar
+				.progress-status
+					| Loading: 
+					span#progress-percentage 0
+					| %
 		//- main content
 		block header
 			include _header.pug
