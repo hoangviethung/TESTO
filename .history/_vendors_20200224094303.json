@@ -6,8 +6,7 @@
 		"bower_components/linearicons/dist/web-font/fonts/**"
 	],
 	"js": [
-		"bower_components/swiper/package/js/swiper.js",
-		"bower_components/fancybox/dist/jquery.fancybox.js"
+		"bower_components/swiper/package/js/swiper.js"
 	],
 	"css": [
 		"bower_components/swiper/package/css/swiper.css",
