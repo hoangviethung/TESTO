@@ -3,11 +3,13 @@
     width: 100%;
 	float: left;
 	padding-bottom: 50px;
-	.line{
-		h3{
-			&::after{
-				width: 50%;
-			}
+	.title-sec{
+		position: relative;
+		text-align: center;
+		&::before{
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
 		}
 	}
 	.member-slide{
@@ -87,7 +89,7 @@
 			height: 100%;
 			background-size: cover;
 			background-repeat: no-repeat;
-			background-image: url(..\assets\icons\next.png);
+			background-image: url(..\assets\icons\next-slide.png);
 		}
 
 		@media(max-width: 1025px) {

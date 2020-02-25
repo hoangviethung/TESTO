@@ -9,10 +9,11 @@
 			h3{
 				&::after{
 					content: '';
-					width: 50%;
-					position: absolute;
-					bottom: 0;
-					transform : translateX(-50%);
+				width: 50%;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				transform : translateX(0);
 				}
 			}
 			

@@ -3,16 +3,37 @@
     width: 100%;
 	float: left;
 	padding-bottom: 50px;
-	.line{
-		h3{
-			&::after{
-				width: 50%;
-			}
+	.title-sec{
+		position: relative;
+		text-align: center;
+		&::before{
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
 		}
 	}
 	.member-slide{
 		width: 100%;
-	
+		.swiper-button-prev {
+			width: 70px;
+			height: 70px;
+			top: 50%;
+			left: -35px;
+			z-index: 999;
+
+			&::after {
+				content: '';
+				width: 100%;
+				height: 100%;
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-image: url(..\assets\icons\back-slide.png);
+			}
+
+			@media(max-width: 1025px) {
+				display: none;
+			}
+		}
 		.swiper-wrapper{
 			width: 100%;
 			.swiper-slide{
@@ -52,46 +73,6 @@
 				}
 			}
 			
-		}
-	}
-	.swiper-button-prev {
-		width: 70px;
-		height: 70px;
-		top: 50%;
-		left: -35px;
-		z-index: 999;
-
-		&::after {
-			content: '';
-			width: 100%;
-			height: 100%;
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-image: url(..\assets\icons\back-slide.png);
-		}
-
-		@media(max-width: 1025px) {
-			display: none;
-		}
-	}
-	.swiper-button-next {
-		width: 70px;
-		height: 70px;
-		top: 50%;
-		right: -35px;
-		z-index: 999;
-
-		&::after {
-			content: '';
-			width: 100%;
-			height: 100%;
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-image: url(..\assets\icons\next.png);
-		}
-
-		@media(max-width: 1025px) {
-			display: none;
 		}
 	}
 }

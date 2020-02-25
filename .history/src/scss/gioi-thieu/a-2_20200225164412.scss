@@ -3,11 +3,13 @@
     width: 100%;
 	float: left;
 	padding-bottom: 50px;
-	.line{
-		h3{
-			&::after{
-				width: 50%;
-			}
+	.title-sec{
+		position: relative;
+		text-align: center;
+		&::before{
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
 		}
 	}
 	.member-slide{
