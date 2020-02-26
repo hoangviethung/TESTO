@@ -124,9 +124,9 @@ function responText() {
     $(window).resize(function() {
         var width = $(window).width();
         if (width < 658) {
-            $('.nb-1, .nb-4').find('.text-content').css({ display: "none" });
+            $('.nb-1 .nb-4').find('.text-content').css({ display: "none" });
         } else {
-            $('.nb-1, .nb-4').find('.text-content').css({ display: "block" });
+            $('.nb-1 .nb-4').find('.text-content').css({ display: "block" });
         }
     });
 }
