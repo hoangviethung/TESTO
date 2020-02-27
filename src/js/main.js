@@ -54,6 +54,7 @@ const homeSlider = () => {
 	})
 }
 
+// SLIDER SẢN PHẨM TRANG CHỦ
 const homeProductSlider = () => {
 	var swiper = new Swiper('.home-product .swiper-container', {
 		slidesPerView: 1,
@@ -94,6 +95,20 @@ const activeHeaderWhenScroll = () => {
 	})
 }
 
+// CHECK LAYOUT CÓ BANNER KHÔNG
+const checkLayoutBanner = () => {
+	const mainSlider = $('.main-page-slider');
+	const breadcrumb = $('#breadcrumb-wrapper');
+	const heightHeader = $('header').outerHeight();
+	if (mainSlider.length >= 1) {
+		mainSlider.css('padding-top', heightHeader);
+	} else if (breadcrumb.length >= 1) {
+		breadcrumb.css('padding-top', heightHeader);
+	} else {
+		$('main').css('padding-top', heightHeader);
+	}
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 	Loading();
 	// SLIDER HERE !!!
@@ -101,5 +116,10 @@ document.addEventListener('DOMContentLoaded', () => {
 	homeProductSlider();
 	// HEADER HERE !!!
 	activeHeaderWhenScroll();
+<<<<<<< HEAD
+>>>>>>> hung
+=======
+	// CHECK BANNER IN LAYOUT
+	checkLayoutBanner();
 >>>>>>> hung
 });
