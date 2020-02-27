@@ -94,10 +94,6 @@ const checkLayoutBanner = () => {
 	const mainSlider = $('.main-page-slider');
 	const breadcrumb = $('#breadcrumb-wrapper');
 	const heightHeader = $('header').outerHeight();
-<<<<<<< HEAD
-=======
-	console.log(heightHeader);
->>>>>>> 529adc305cc128135c67632509e15e3d2a258570
 	if (mainSlider.length >= 1) {
 		mainSlider.css('padding-top', heightHeader);
 	} else if (breadcrumb.length >= 1) {
