@@ -1,0 +1,11 @@
+.index-1 {
+	margin-top: 50px;
+
+	@media (max-width: 767.98px) {
+		margin-top: 25px;
+
+		.block-title {
+			margin-bottom: 15px;
+		}
+	}
+}

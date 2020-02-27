@@ -1,0 +1,9 @@
+.block-banner.main-page-slider
+	.swiper-container
+		.swiper-wrapper
+			-for(i=1;i<8;i++)
+				.swiper-slide
+					a.swiper-inner( href="#" style="background-image: url(./assets/images/banner/b-"+i+".png")
+						figure.ov-h
+							img(class="ofcv" src="./assets/images/banner/b-"+i+".png", alt="")
+		.swiper-pagination

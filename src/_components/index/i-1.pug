@@ -1,10 +1,19 @@
 section.index-1
-	.block-banner.home-slider
-		.swiper-container
-			.swiper-wrapper
-				-for(i=1;i<5;i++)
-					.swiper-slide
-						a.swiper-inner( href="#" style="background-image: url('./assets/images/index/home-banner.png')")
-							figure.ov-h
-								img(class="ofcv" src="./assets/images/index/home-banner.png", alt="")
-			.swiper-pagination
+	.container
+		.block-title.line.color-gray.ta-c.mb-30px
+			h3 SẢN PHẨM
+		.slider-product.home-product
+			.swiper-container
+				.swiper-wrapper
+					-for(i=1;i<5;i++)
+						.swiper-slide
+							figure
+								a(href="#")
+									.img.ov-h
+										img(class="ofcv" src="./assets/images/index/home-pro-"+i+".png", alt="", srcset="")
+									figcaption.ta-c
+										h4.fw-700.tt-u ĐIỀU HÒA NHIỆT ĐỘ / ĐIỆN LẠNH
+										p.lcl.lcl-2 It has survived not only five centuries, but also the leap into electronic typesetting.
+										a.btn.view-more.fw-700.tt-u(href="san-phan-chi-tiet.html") xem thêm
+			.swiper-button-prev
+			.swiper-button-next

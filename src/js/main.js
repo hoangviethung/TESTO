@@ -1,8 +1,9 @@
 import Cookie from "./lib/Cookie";
 import Loading from "./lib/Loading";
 
+// SLIDER HERE !!!
 const homeSlider = () => {
-	var swiper = new Swiper('.home-slider .swiper-container', {
+	var swiper = new Swiper('.main-page-slider .swiper-container', {
 		loop: true,
 		speed: 1000,
 		autoplay: {
@@ -14,7 +15,7 @@ const homeSlider = () => {
 		mousewheelControl: true,
 		keyboardControl: true,
 		pagination: {
-			el: '.home-slider .swiper-pagination',
+			el: '.main-page-slider .swiper-pagination',
 			type: 'bullets',
 			clickable: true,
 		},
@@ -75,9 +76,23 @@ const homeProductSlider = () => {
 	})
 }
 
+// HEADER HERE !!!
+const activeHeaderWhenScroll = () => {
+	const heightHeader = document.querySelector('header').offsetHeight;
+	window.addEventListener('scroll', function() {
+		if (window.pageYOffset >= heightHeader) {
+			document.querySelector('header').classList.add('scrolled');
+		} else {
+			document.querySelector('header').classList.remove('scrolled');
+		}
+	})
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 	Loading();
 	// SLIDER HERE !!!
 	homeSlider();
 	homeProductSlider();
+	// HEADER HERE !!!
+	activeHeaderWhenScroll();
 });
