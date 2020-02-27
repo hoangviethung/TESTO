@@ -5,12 +5,24 @@
 		"bower_components/linearicons/dist/web-font/fonts/**"
 	],
 	"js": [
+<<<<<<< HEAD
 		"bower_components/jquery/dist/jquery.js",
+		"bower_components/swiper/package/js/swiper.js",
+		"bower_components/lazysizes/lazysizes.js",
+		"bower_components/fancybox/dist/jquery.fancybox.min.js"
+		
+	],
+	"css": [
+		"bower_components/swiper/package/css/swiper.css",
+		"vendors/linearicons.css",
+		"bower_components/fancybox/dist/jquery.fancybox.min.css"
+=======
 		"bower_components/swiper/package/js/swiper.js",
 		"bower_components/lazysizes/lazysizes.js"
 	],
 	"css": [
 		"bower_components/swiper/package/css/swiper.css",
 		"vendors/linearicons.css"
+>>>>>>> hung
 	]
 }
