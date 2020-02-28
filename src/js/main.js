@@ -77,6 +77,52 @@ const homeProductSlider = () => {
 	})
 }
 
+const setHeightThumbnailSliderProductDetail = () => {
+	if (window.innerWidth > 575) {
+		const heightReview = $('.slider-product-detail .review-image img').height();
+		$('.thumbnail-image').css('height', heightReview);
+	}
+}
+
+const produdctDetailSlider = () => {
+	var thumbnail = new Swiper('.slider-product-detail .thumbnail-image .swiper-container', {
+		direction: 'horizontal',
+		spaceBetween: 10,
+		slidesPerView: 3,
+		loop: true,
+		observer: true,
+		observeParents: true,
+		slideToClickedSlide: true,
+		navigation: {
+			nextEl: '.review-image .swiper-button-next',
+			prevEl: '.review-image .swiper-button-prev',
+		},
+		breakpoints: {
+			575.98: {
+				direction: 'vertical',
+			}
+		}
+	});
+
+	var review = new Swiper('.slider-product-detail .review-image .swiper-container', {
+		effect: 'fade',
+		fadeEffect: {
+			crossFade: true,
+		},
+		spaceBetween: 10,
+		loop: true,
+		simulateTouch: false,
+		loopedSlides: 3,
+		thumbs: {
+			swiper: thumbnail,
+		},
+		navigation: {
+			nextEl: '.review-image .swiper-button-next',
+			prevEl: '.review-image .swiper-button-prev',
+		}
+	});
+}
+
 // HEADER HERE !!!
 const activeHeaderWhenScroll = () => {
 	const heightHeader = document.querySelector('header').offsetHeight;
@@ -121,15 +167,17 @@ const checkLayoutBanner = () => {
 }
 
 const filterMobile = () => {
-	$('.mobile-filter-open').on('click', function() {
-		$(this).siblings('.filter-option-parent').find('.filter-option-container').slideToggle();
-		$(this).siblings('.filter-option-parent').find('.filter-option-container .filter-option .filter-entries').slideUp();
-	});
+	if (window.innerWidth < 1025) {
+		$('.mobile-filter-open').on('click', function() {
+			$(this).siblings('.filter-option-parent').find('.filter-option-container').slideToggle();
+			$(this).siblings('.filter-option-parent').find('.filter-option-container .filter-option .filter-entries').slideUp();
+		});
 
-	$('.option-title').on('click', function() {
-		$(this).siblings('.filter-entries').slideToggle();
-		$('.option-title').not(this).siblings('.filter-entries').slideUp();
-	});
+		$('.option-title').on('click', function() {
+			$(this).siblings('.filter-entries').slideToggle();
+			$('.option-title').not(this).siblings('.filter-entries').slideUp();
+		});
+	}
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -137,6 +185,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	// SLIDER HERE !!!
 	homeSlider();
 	homeProductSlider();
+	produdctDetailSlider();
+	setHeightThumbnailSliderProductDetail();
 	// HEADER HERE !!!
 	activeHeaderWhenScroll();
 	// CHECK BANNER IN LAYOUT
