@@ -1,0 +1,46 @@
+.aside-filter {
+	.filter-option {
+		margin-bottom: 20px;
+
+		.option-title {
+			cursor        : pointer;
+			color         : #545454;
+			font-weight   : 700;
+			text-transform: uppercase;
+			transition    : .3s all ease-in-out;
+			margin-bottom : 10px;
+
+			@media (min-width: 1025px) {
+				&:hover {
+					color: map-get($mau, main);
+				}
+			}
+		}
+
+		.filter-entries {
+			padding-bottom: 10px;
+			border-bottom : 1px solid map-get($mau, main);
+
+			ul {
+				list-style-type: none;
+				padding-left   : 0;
+
+				li {
+					margin-bottom: 5px;
+
+					>a {
+						color: #707070;
+					}
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
