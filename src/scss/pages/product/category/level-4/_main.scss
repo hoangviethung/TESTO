@@ -3,4 +3,8 @@
 	// IMPORT HERE !!!
 	@import 'aside-filter';
 	@import 'list-item';
+
+	@media (max-width: 1024.98px) {
+		margin-top: 25px;
+	}
 }

@@ -89,14 +89,31 @@ const activeHeaderWhenScroll = () => {
 	})
 }
 
+const toggleMenuMobile = () => {
+
+	$('.toggle-menu.mobile').on('click', function() {
+		$(this).toggleClass('active');
+		$(this).siblings('.main-nav').toggleClass('active');
+		$('body').toggleClass('disabled')
+		$('#overlay').toggleClass('active');
+	});
+
+	$('#overlay').on('click', function() {
+		$(this).removeClass('active');
+		$('body').removeClass('disabled')
+		$('.main-nav').removeClass('active');
+		$('.toggle-menu.mobile').removeClass('active');
+	})
+}
+
 // CHECK LAYOUT CÓ BANNER KHÔNG
 const checkLayoutBanner = () => {
 	const mainSlider = $('.main-page-slider');
 	const breadcrumb = $('#breadcrumb-wrapper');
 	const heightHeader = $('header').outerHeight();
-	if (mainSlider.length >= 1) {
+	if (mainSlider.length >= 1 && mainSlider.css('display') == 'block') {
 		mainSlider.css('padding-top', heightHeader);
-	} else if (breadcrumb.length >= 1) {
+	} else if (breadcrumb.length >= 1 && breadcrumb.css('display') == 'block') {
 		breadcrumb.css('padding-top', heightHeader);
 	} else {
 		$('main').css('padding-top', heightHeader);
@@ -121,9 +138,10 @@ document.addEventListener('DOMContentLoaded', () => {
 	homeSlider();
 	homeProductSlider();
 	// HEADER HERE !!!
-	// activeHeaderWhenScroll();
+	activeHeaderWhenScroll();
 	// CHECK BANNER IN LAYOUT
 	checkLayoutBanner();
+	toggleMenuMobile();
 	// FILTER MOBILE
 	filterMobile();
 });
