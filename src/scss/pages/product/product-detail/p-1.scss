@@ -53,16 +53,12 @@
 		}
 
 		.swiper-button-next {
-			right: -30px;
-
 			&:after {
 				background-image: url(../assets/icons/next-slider-prodcut-detail.svg);
 			}
 		}
 
 		.swiper-button-prev {
-			left: -30px;
-
 			&:after {
 				background-image: url(../assets/icons/prev-slider-prodcut-detail.svg);
 			}
