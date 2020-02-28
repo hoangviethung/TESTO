@@ -1,46 +1,111 @@
 .aside-filter {
+	.mobile-filter-open {
+		background-color: #ffffff;
+		border          : 1px solid #648798;
+		padding         : 12px;
+		margin-bottom   : 20px;
+		line-height     : 24px;
+	}
+
 	.filter-option {
 		margin-bottom: 20px;
 
-		.option-title {
-			cursor        : pointer;
-			color         : #545454;
-			font-weight   : 700;
-			text-transform: uppercase;
-			transition    : .3s all ease-in-out;
-			margin-bottom : 10px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
 
-			@media (min-width: 1025px) {
-				&:hover {
-					color: map-get($mau, main);
+	.option-title {
+		cursor        : pointer;
+		color         : #545454;
+		font-weight   : 700;
+		text-transform: uppercase;
+		transition    : .3s all ease-in-out;
+		margin-bottom : 10px;
+
+		@media (min-width: 1025px) {
+			&:hover {
+				color: map-get($mau, main);
+			}
+		}
+	}
+
+	.filter-entries {
+		padding-bottom: 10px;
+		border-bottom : 1px solid map-get($mau, main);
+
+		ul {
+			list-style-type: none;
+			padding-left   : 0;
+
+			li {
+				margin-bottom: 5px;
+
+				>a {
+					color: #707070;
+				}
+
+				&:last-child {
+					margin-bottom: 0;
 				}
 			}
+		}
+	}
+
+	@media (max-width: 1024.98px) {
+		.filter-option-container {
+			display         : none;
+			padding         : 0 12px;
+			border          : 1px solid #648798;
+			border-top      : 0;
+			position        : relative;
+			top             : -20px;
+			width           : 100%;
+			z-index         : 999;
+			background-color: #fff;
+		}
+
+		.filter-option {
+			margin-bottom: 0;
+			padding      : 12px 0;
+			border-bottom: 1px solid #648798;
+
+			&:last-child {
+				border-bottom: 0;
+			}
+		}
+
+		.option-title {
+			margin-bottom : 0;
+			text-transform: unset;
+			color         : #000000;
 		}
 
 		.filter-entries {
-			padding-bottom: 10px;
-			border-bottom : 1px solid map-get($mau, main);
+			display       : none;
+			border-bottom : 0;
+			padding-bottom: 0;
+			margin-top    : 12px;
+		}
+	}
 
+	@media (max-width: 767.98px) {
+		.mobile-filter-open {
+			font-size: 14px;
+		}
+
+		.option-title {
+			font-size: 14px;
+		}
+
+		.filter-entries {
 			ul {
-				list-style-type: none;
-				padding-left   : 0;
-
 				li {
-					margin-bottom: 5px;
-
 					>a {
-						color: #707070;
-					}
-
-					&:last-child {
-						margin-bottom: 0;
+						font-size: 14px;
 					}
 				}
 			}
-		}
-
-		&:last-child {
-			margin-bottom: 0;
 		}
 	}
 }

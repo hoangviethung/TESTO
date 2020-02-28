@@ -103,13 +103,27 @@ const checkLayoutBanner = () => {
 	}
 }
 
+const filterMobile = () => {
+	$('.mobile-filter-open').on('click', function() {
+		$(this).siblings('.filter-option-parent').find('.filter-option-container').slideToggle();
+		$(this).siblings('.filter-option-parent').find('.filter-option-container .filter-option .filter-entries').slideUp();
+	});
+
+	$('.option-title').on('click', function() {
+		$(this).siblings('.filter-entries').slideToggle();
+		$('.option-title').not(this).siblings('.filter-entries').slideUp();
+	});
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 	Loading();
 	// SLIDER HERE !!!
 	homeSlider();
 	homeProductSlider();
 	// HEADER HERE !!!
-	activeHeaderWhenScroll();
+	// activeHeaderWhenScroll();
 	// CHECK BANNER IN LAYOUT
 	checkLayoutBanner();
+	// FILTER MOBILE
+	filterMobile();
 });
