@@ -1,12 +1,5 @@
 import Cookie from "./lib/Cookie";
 import Loading from "./lib/Loading";
-
-<<<<<<< HEAD
-
-document.addEventListener('DOMContentLoaded', () => {
-    Loading();
-
-=======
 // SLIDER HERE !!!
 const homeSlider = () => {
 	var swiper = new Swiper('.main-page-slider .swiper-container', {
@@ -195,16 +188,9 @@ document.addEventListener('DOMContentLoaded', () => {
 	setHeightThumbnailSliderProductDetail();
 	// HEADER HERE !!!
 	activeHeaderWhenScroll();
-<<<<<<< HEAD
->>>>>>> hung
-=======
 	// CHECK BANNER IN LAYOUT
 	checkLayoutBanner();
-<<<<<<< HEAD
->>>>>>> hung
-=======
 	toggleMenuMobile();
 	// FILTER MOBILE
 	filterMobile();
->>>>>>> hung
 });
