@@ -1,9 +1,8 @@
-.category-product-level-2 {
+.category-product-level-4 {
 	margin-top: 80px;
 	// IMPORT HERE !!!
-	@import 'block-1';
-	@import 'block-2';
-	@import 'block-3';
+	@import 'aside-filter';
+	@import 'list-item';
 
 	@media (max-width: 1024.98px) {
 		margin-top: 25px;

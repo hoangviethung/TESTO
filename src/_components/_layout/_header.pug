@@ -7,6 +7,7 @@ header
 			.logo
 				a(href="index.html")
 					img.lazyload.blur-up(data-src="./assets/logo.svg")
+			.toggle-menu.mobile
 			.main-nav
 				ul.nav-list
 					li.nav-item
@@ -23,10 +24,15 @@ header
 						a(href="#").nav-link về chúng tôi
 					li.nav-item
 						a(href="#").nav-link liên hệ
+					li.nav-item.mobile
+						select(name="")
+							option(selected disabled hidden) ngôn ngữ
+							option(value="0") tiếng anh
+							option(value="0") tiếng việt
 			.search
 				.label
 					img.lazyload.blur-up(data-src="./assets/icons/search.svg", alt="", srcset="")
-			.language
+			.language.dekstop
 				ul
 					li.active
 						a(href="#")

@@ -1,0 +1,19 @@
+extends _components/_layout/_layout.pug
+
+block var
+	- let title = 'Danh mục sản phẩm cấp 4';
+	- let bodyClass = 'category-product-level4-page';
+
+block banner,breadcrumb
+	include ./_components/_layout/_breadcrumb.pug
+block main
+	section.category-product-level-4
+		.container
+			.row
+				// ASIDE MENU FILTER ### CẤP 4 ###
+				.col-lg-2
+					include ./_components/product/category/level-4/aside-filter
+				// DANH SÁCH SẢN PHẨM ### CẤP 4 ###
+				.col-lg-10
+					include ./_components/product/category/level-4/list-item
+block scripts

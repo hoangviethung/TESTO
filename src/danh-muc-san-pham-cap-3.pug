@@ -1,0 +1,19 @@
+extends _components/_layout/_layout.pug
+
+block var
+	- let title = 'Danh mục sản phẩm cấp 3';
+	- let bodyClass = 'category-product-level3-page';
+
+block banner,breadcrumb
+	include ./_components/_layout/_breadcrumb.pug
+block main
+	section.category-product-level-3
+		// BLOCK 1 TRANG DANH MỤC SẢN PHẨM ### CẤP 3 ###
+		include ./_components/product/category/level-3/block-1
+		// BLOCK 2 TRANG DANH MỤC SẢN PHẨM ### CẤP 3 ###
+		include ./_components/product/category/level-3/block-2
+		// BLOCK 3 TRANG DANH MỤC SẢN PHẨM ### CẤP 3 ###
+		include ./_components/product/category/level-3/block-3
+		// BLOCK 4 TRANG DANH MỤC SẢN PHẨM ### CẤP 3 ###
+		include ./_components/product/category/level-3/block-4
+block scripts
