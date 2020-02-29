@@ -78,6 +78,34 @@ const homeProductSlider = () => {
 	})
 }
 
+const productOthersSlider = () => {
+	var swiper = new Swiper('.slider-product-others .swiper-container', {
+		slidesPerView: 1,
+		spaceBetween: 0,
+		loop: true,
+		speed: 1000,
+		simulateTouch: false,
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+		},
+		navigation: {
+			nextEl: '.slider-product-others .swiper-button-next',
+			prevEl: '.slider-product-others .swiper-button-prev',
+		},
+		breakpoints: {
+			768: {
+				slidesPerView: 2,
+				spaceBetween: 10,
+			},
+			1440: {
+				slidesPerView: 2,
+				spaceBetween: 35,
+			}
+		},
+	})
+}
+
 const setHeightThumbnailSliderProductDetail = () => {
 	if (window.innerWidth > 575) {
 		const heightReview = $('.slider-product-detail .review-image img').height();
@@ -201,6 +229,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	// SLIDER HERE !!!
 	homeSlider();
 	homeProductSlider();
+	productOthersSlider();
 	produdctDetailSlider();
 	setHeightThumbnailSliderProductDetail();
 	// HEADER HERE !!!

@@ -154,6 +154,24 @@ body {
 		}
 	}
 
+	&.line-center-50 {
+		h3 {
+			position      : relative;
+			padding-bottom: 5px;
+
+			&:after {
+				content   : '';
+				position  : absolute;
+				left      : 50%;
+				bottom    : 0;
+				transform : translateX(-50%);
+				background: #E4B354;
+				width     : 50%;
+				height    : 5px;
+			}
+		}
+	}
+
 	&.line-left-50 {
 		h3 {
 			position      : relative;

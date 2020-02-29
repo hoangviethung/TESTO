@@ -1,2 +1,14 @@
 section.product-others
-	
+	.container
+		.block-title.ta-c.line-center-50.mb-40px
+			h3.tt-u.fw-700.color-gray sản phẩm liên quan
+		.slider-product-others
+			.swiper-container
+				.swiper-wrapper
+					-for(i=1;i<3;i++)
+						.swiper-slide
+							a(href="san-pham-chi-tiet.html")
+								.img.ov-h
+									img.ofcv(src="./assets/images/products/product-others/"+i+".png", alt="")
+			.swiper-button-prev
+			.swiper-button-next
