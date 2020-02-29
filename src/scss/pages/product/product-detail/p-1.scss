@@ -1,6 +1,11 @@
 .product-detail {
 	margin-top: 80px;
 
+	.slide-img {
+		margin-bottom: 80px;
+	}
+
+	// 2 SLIDER PRDUCT DETAIL
 	.slider-product-detail {
 		display  : flex;
 		flex-wrap: wrap;
@@ -65,6 +70,7 @@
 		}
 	}
 
+	// THẨM ĐỊNH SẢN  PHẨM
 	.position-product {
 		margin-top: 30px;
 
@@ -79,6 +85,66 @@
 		}
 	}
 
+	.mobile-list-tab-open {
+		background-color: #ffffff;
+		border          : 1px solid #648798;
+		padding         : 12px;
+		line-height     : 24px;
+	}
+
+	// TAB THÔNG TIN CHI TIẾT SẢN PHẨM
+	.block-tab-information-detail {
+		width : 1088px;
+		margin: 0 auto;
+
+		.list-tab {
+			display        : flex;
+			justify-content: center;
+			list-style-type: none;
+			padding-left   : 0;
+
+			.item {
+				position      : relative;
+				margin-right  : 75px;
+				color         : #707070;
+				font-weight   : 700;
+				text-transform: uppercase;
+				padding-bottom: 5px;
+
+				&:last-child {
+					margin-right: 0;
+				}
+
+				&:after {
+					content   : '';
+					position  : absolute;
+					width     : 0;
+					height    : 2px;
+					bottom    : 0;
+					left      : 50%;
+					transform : translateX(-50%);
+					background: #E4B354;
+					transition: .3s all ease-in-out;
+				}
+
+				&.active {
+					&:after {
+						width: 100%;
+					}
+				}
+
+				@media (min-width: 1025px) {
+					&:hover {
+						&:after {
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// REST ALL CUSTOM PADDING
 	@media (max-width: 1439.98px) {
 		.slider-product-detail {
 			.review-image {
@@ -98,15 +164,56 @@
 				max-height: 250px;
 			}
 		}
+
+		// TAB THÔNG TIN CHI TIẾT SẢN PHẨM
+		.block-tab-information-detail {
+			width : 100%;
+			margin: 0;
+		}
 	}
 
 	@media (max-width: 1024.98px) {
 		margin-top: 40px;
 
+		.slide-img {
+			margin-bottom: 0;
+		}
+
+		// THẨM ĐỊNH SẢN  PHẨM
+		.position-product {
+			margin-bottom: 30px;
+		}
+
 		.position-product {
 			.description {
 				overflow-y: unset;
 				max-height: unset;
+			}
+		}
+
+		.block-tab-information-detail {
+			.list-tab {
+				display       : none;
+				flex-direction: column;
+				border-left   : 1px solid #648798;
+				border-right  : 1px solid #648798;
+				border-bottom : 1px solid #648798;
+
+				.item {
+					margin-right  : 0;
+					font-weight   : 300;
+					padding       : 12px;
+					border-bottom : 1px solid #dedede;
+					text-transform: none;
+
+					&:last-child {
+						border-bottom: 0;
+					}
+
+					&:after {
+						content: none;
+					}
+				}
 			}
 		}
 	}

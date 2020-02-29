@@ -3,9 +3,10 @@ section.product-detail
 		.block-title.mb-30px
 			h3.tt-u.fw-700.color-main testo 805 i - infrared thermometer with smartphone operation
 			.code.fw-700.color-gray.tt-u Order-Nr. 0560 1805
-		.row
+		.row.slide-img
 			.col-lg-8
 				.slider-product-detail
+					// - ## SLIDER HÌNH LỚNN -## //
 					.review-image.ov-h
 						.swiper-container
 							.swiper-wrapper
@@ -15,6 +16,7 @@ section.product-detail
 											img.ofcv(src="./assets/images/products/product-detail/1.png", alt="", srcset="")
 						.swiper-button-prev
 						.swiper-button-next
+					// - ## CHIỀU CAO CỦA SLIDER THUBNAIL ĐƯỢC SET BẰNG JS -## //
 					.thumbnail-image.ov-h
 						.swiper-container.h-100
 							.swiper-wrapper
@@ -22,6 +24,7 @@ section.product-detail
 									.swiper-slide.ov-h
 										img.ofcv(src="./assets/images/products/product-detail/1.png", alt="", srcset="")
 			.col-lg-4
+				// BLOCK MỘT SỐ THẨM ĐỊNH VỀ SẢN PHẨM
 				.position-product
 					.description
 						.ckeditor.desc-position-product
@@ -42,3 +45,75 @@ section.product-detail
 									p Lorem Ipsum has been the industry's standard
 								li 
 									p Dummy text ever since the 1500
+		// BLOCK THÔNG TIN CHI TIẾT SẢN PHẨM
+		.mobile-list-tab-open.mobile Nhấn để xem các thông tin chi tiết
+		.block-tab-information-detail
+			.tab-container
+				ul.dekstop.list-tab
+					li.item(toggle-for="tab-detail").active Chi tiết
+					li.item(toggle-for="tab-data") Dữ liệu kĩ thuật
+					li.item(toggle-for="tab-accessories") Phụ kiện
+					li.item(toggle-for="tab-downloads") Tải xuống
+				.tab-content
+					.content(tab-id="tab-detail")
+						// THÔNG TIN CHI TIẾT SẢN PHẨM
+						.ckeditor.desc-tab-information
+							h5 Mô tả Sản phẩm
+							p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. leap into electronic typesetting, remaining essentially unchanged.
+							h5 Tài liệu bao gồm hình ảnh qua Ứng dụng trên điện thoại thông minh / máy tính bảng
+							p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+							p Lorem Ipsum is simply dummy text
+							ul
+								li
+									p Lorem Ipsum is simply dummy text of the
+								li
+									p Lorem Ipsum is simply dummy text of the
+								li
+									p Lorem Ipsum is simply dummy text of the
+							h5 Phạm vi giao hàng
+							p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. leap into electronic typesetting, remaining essentially unchanged.
+					// THÔNG SỐ KĨ THUẬT SẢN PHẨM
+					.content(tab-id="tab-data")
+						.ckeditor.desc-tab-information
+							h5 Mô tả Sản phẩm
+							p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. leap into electronic typesetting, remaining essentially unchanged.
+							h5 Tài liệu bao gồm hình ảnh qua Ứng dụng trên điện thoại thông minh / máy tính bảng
+							p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+							p Lorem Ipsum is simply dummy text
+							ul
+								li
+									p Lorem Ipsum is simply dummy text of the
+								li
+									p Lorem Ipsum is simply dummy text of the
+								li
+									p Lorem Ipsum is simply dummy text of the
+							h5 Phạm vi giao hàng
+							p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. leap into electronic typesetting, remaining essentially unchanged.
+					// PHỤ KIỆN ĐI KÈM THEO SẢN PHẨM
+					.content(tab-id="tab-accessories")
+						.ckeditor.desc-tab-information
+							h5 Mô tả Sản phẩm
+							p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. leap into electronic typesetting, remaining essentially unchanged.
+							h5 Tài liệu bao gồm hình ảnh qua Ứng dụng trên điện thoại thông minh / máy tính bảng
+							p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+							p Lorem Ipsum is simply dummy text
+							ul
+								li
+									p Lorem Ipsum is simply dummy text of the
+								li
+									p Lorem Ipsum is simply dummy text of the
+								li
+									p Lorem Ipsum is simply dummy text of the
+							h5 Phạm vi giao hàng
+							p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. leap into electronic typesetting, remaining essentially unchanged.
+					// DOWNLOAD
+					.content(tab-id="tab-downloads")
+						.ckeditor.desc-tab-downloads
+							h3 Tài liệu sản phẩm
+							ul
+								li
+									a(href="https://static-int.testo.com/media/58/1b/41df0cd50ace/testo-310-Data-sheet.pdf" target="_blank") Product brochure testo 310  (PDF, 609 kB)
+							h3 Hướng dẫn sử dụng
+							ul
+								li
+									a(href="https://static-int.testo.com/media/58/1b/41df0cd50ace/testo-310-Data-sheet.pdf" target="_blank") Instruction manual testo 310  (PDF, 2.0 MB)

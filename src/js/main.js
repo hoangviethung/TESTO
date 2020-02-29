@@ -1,5 +1,6 @@
 import Cookie from "./lib/Cookie";
 import Loading from "./lib/Loading";
+import Tab from "./lib/Tab";
 
 // SLIDER HERE !!!
 const homeSlider = () => {
@@ -93,6 +94,10 @@ const produdctDetailSlider = () => {
 		observer: true,
 		observeParents: true,
 		slideToClickedSlide: true,
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+		},
 		navigation: {
 			nextEl: '.review-image .swiper-button-next',
 			prevEl: '.review-image .swiper-button-prev',
@@ -108,6 +113,10 @@ const produdctDetailSlider = () => {
 		effect: 'fade',
 		fadeEffect: {
 			crossFade: true,
+		},
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
 		},
 		spaceBetween: 10,
 		loop: true,
@@ -136,7 +145,6 @@ const activeHeaderWhenScroll = () => {
 }
 
 const toggleMenuMobile = () => {
-
 	$('.toggle-menu.mobile').on('click', function() {
 		$(this).toggleClass('active');
 		$(this).siblings('.main-nav').toggleClass('active');
@@ -180,6 +188,14 @@ const filterMobile = () => {
 	}
 }
 
+const tabProductDetailMobile = () => {
+	if (window.innerWidth < 1025) {
+		$('.mobile-list-tab-open').on('click', function() {
+			$(this).siblings('.block-tab-information-detail').find('.list-tab').slideToggle();
+		});
+	}
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 	Loading();
 	// SLIDER HERE !!!
@@ -194,4 +210,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	toggleMenuMobile();
 	// FILTER MOBILE
 	filterMobile();
+	// TAB PRODUCT DETAIL MOBILE
+	tabProductDetailMobile();
+	// TAB
+	const tabInformationDetail = new Tab('.block-tab-information-detail');
 });
