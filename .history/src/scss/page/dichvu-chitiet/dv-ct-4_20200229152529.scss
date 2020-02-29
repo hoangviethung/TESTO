@@ -1,0 +1,21 @@
+.c-t-4{
+	padding-bottom: 50px;
+	.block-item{
+		padding: 0;
+		margin: 0;
+		.item{
+			padding: 0;
+			background-color: #DAE4EA;
+			.content{
+				width: 100%;
+				margin: auto;
+				@media(max-width: 1500px){
+					max-width: 500px;
+				}
+			}
+		}
+	}
+	@media(max-width: 1025px){
+		padding-bottom: 30px;
+	}
+}
