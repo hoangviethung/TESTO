@@ -1,5 +1,7 @@
 import Cookie from "./lib/Cookie";
 import Loading from "./lib/Loading";
+import Tab from "./lib/Tab";
+
 // SLIDER HERE !!!
 const homeSlider = () => {
 	var swiper = new Swiper('.main-page-slider .swiper-container', {
@@ -76,6 +78,34 @@ const homeProductSlider = () => {
 	})
 }
 
+const productOthersSlider = () => {
+	var swiper = new Swiper('.slider-product-others .swiper-container', {
+		slidesPerView: 1,
+		spaceBetween: 0,
+		loop: true,
+		speed: 1000,
+		simulateTouch: false,
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+		},
+		navigation: {
+			nextEl: '.slider-product-others .swiper-button-next',
+			prevEl: '.slider-product-others .swiper-button-prev',
+		},
+		breakpoints: {
+			768: {
+				slidesPerView: 2,
+				spaceBetween: 10,
+			},
+			1440: {
+				slidesPerView: 2,
+				spaceBetween: 35,
+			}
+		},
+	})
+}
+
 const setHeightThumbnailSliderProductDetail = () => {
 	if (window.innerWidth > 575) {
 		const heightReview = $('.slider-product-detail .review-image img').height();
@@ -92,6 +122,10 @@ const produdctDetailSlider = () => {
 		observer: true,
 		observeParents: true,
 		slideToClickedSlide: true,
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+		},
 		navigation: {
 			nextEl: '.review-image .swiper-button-next',
 			prevEl: '.review-image .swiper-button-prev',
@@ -107,6 +141,10 @@ const produdctDetailSlider = () => {
 		effect: 'fade',
 		fadeEffect: {
 			crossFade: true,
+		},
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
 		},
 		spaceBetween: 10,
 		loop: true,
@@ -135,7 +173,6 @@ const activeHeaderWhenScroll = () => {
 }
 
 const toggleMenuMobile = () => {
-
 	$('.toggle-menu.mobile').on('click', function() {
 		$(this).toggleClass('active');
 		$(this).siblings('.main-nav').toggleClass('active');
@@ -179,11 +216,20 @@ const filterMobile = () => {
 	}
 }
 
+const tabProductDetailMobile = () => {
+	if (window.innerWidth < 1025) {
+		$('.mobile-list-tab-open').on('click', function() {
+			$(this).siblings('.block-tab-information-detail').find('.list-tab').slideToggle();
+		});
+	}
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 	Loading();
 	// SLIDER HERE !!!
 	homeSlider();
 	homeProductSlider();
+	productOthersSlider();
 	produdctDetailSlider();
 	setHeightThumbnailSliderProductDetail();
 	// HEADER HERE !!!
@@ -193,4 +239,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	toggleMenuMobile();
 	// FILTER MOBILE
 	filterMobile();
+	// TAB PRODUCT DETAIL MOBILE
+	tabProductDetailMobile();
+	// TAB
+	const tabInformationDetail = new Tab('.block-tab-information-detail');
 });
