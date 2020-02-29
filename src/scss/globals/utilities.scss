@@ -811,6 +811,28 @@ body {
 			}
 		}
 	}
+
+	&.desc-item-applied {
+		p {
+			color        : #707070;
+			margin-bottom: 5px;
+		}
+
+		ul {
+			padding-left   : 0;
+			list-style-type: none;
+
+			li {
+				margin-bottom: 5px;
+			}
+		}
+
+		@media (max-width: 767.98px) {
+			p {
+				font-size: 14px;
+			}
+		}
+	}
 }
 
 .hover-style-1 {
