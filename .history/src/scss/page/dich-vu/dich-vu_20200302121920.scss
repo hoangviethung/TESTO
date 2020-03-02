@@ -49,6 +49,10 @@
 							font-weight: 600;
 						}
 					}
+
+					@media(max-width: 768px) {
+						transform: none;
+					}
 				}
 
 				.detail {
@@ -76,6 +80,7 @@
 							}
 						}
 					}
+
 					.decs {
 						margin-top: 20px;
 						max-height: 100px;
@@ -86,9 +91,13 @@
 							font-size: 16px;
 						}
 					}
-				}
 
+					@media(max-width: 768px) {
+						transform: none;
+					}
+				}
 			}
+
 			&:hover {
 				.item-card {
 					transform: rotateY(.5turn);
@@ -99,8 +108,9 @@
 				}
 			}
 		}
-		@media(max-width: 1025px) {
-			padding: 0;
-		}
+	}
+
+	@media(max-width: 1025px) {
+		padding: 0;
 	}
 }
