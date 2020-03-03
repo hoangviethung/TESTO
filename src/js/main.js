@@ -257,8 +257,6 @@ const setHeightOverFolowBySomeElement = () => {
 	}
 }
 
-<<<<<<< HEAD
-=======
 function aboutMember() {
 	var swiper = new Swiper('.member-slide', {
 		centeredSlides: true,
@@ -365,7 +363,6 @@ function showBackToTop() {
 	})
 }
 
->>>>>>> hung
 document.addEventListener('DOMContentLoaded', () => {
 	Loading().then(() => {
 		setHeightThumbnailSliderProductDetail();
