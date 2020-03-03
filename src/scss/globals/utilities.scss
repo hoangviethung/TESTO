@@ -128,12 +128,14 @@ body {
 			transition      : all .2s ease-in-out;
 			margin          : 0 15px;
 
-	&-2 {
-		-webkit-line-clamp: 2;
-	}
+			&-2 {
+				-webkit-line-clamp: 2;
+			}
 
-	&-3 {
-		-webkit-line-clamp: 3;
+			&-3 {
+				-webkit-line-clamp: 3;
+			}
+		}
 	}
 }
 
@@ -493,10 +495,12 @@ body {
 			z-index : 20;
 		}
 	}
-	&.limit-3{
+
+	&.limit-3 {
 		-webkit-line-clamp: 3;
 	}
-	&.limit-4{
+
+	&.limit-4 {
 		-webkit-line-clamp: 4;
 	}
 }
