@@ -1,0 +1,41 @@
+section.list-solution
+	.introduce
+		.container
+			figure
+				.img.ov-h
+					img.ofcv(data-getHeight src="./assets/images/solutions/introduce.png", alt="", srcset="")
+				figcaption.ov-h(data-setHeight='575')
+					.ckeditor.desc-introduce-list-solution
+						img(src="./assets/icons/solutions.svg", alt="", srcset="")
+						h3 Giải pháp quản lý chất lượng toàn diện
+						h5 Lorem ipsum
+						p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						ul
+							li
+								p Lorem Ipsum is simply dummy text of the
+							li
+								p Printing and typesetting industry.
+							li
+								p Lorem Ipsum has been the industry's standard
+							li
+								p Dummy text ever since the 
+	.list-item-solution
+		.container
+			.row
+				-for(i=1;i<4;i++)
+					.item-solution.col-lg-4.col-sm-6
+						.block-item-general
+							a(href="giai-phap-chi-tiet.html")
+								figure.hover-style-1
+									.img.ov-h
+										img.ofcv.lazyload.blur-up(data-src="./assets/images/solutions/"+i+".png", alt="")
+									figcaption
+										h5.lcl.lcl-1.fw-700.tt-u.ta-c Lorem Ipsum is simply
+							.description
+								.ckeditor.desc-item-solution
+									p Flue gas and emission measurement on heating systems and other small combustion plants.
+									ul
+										li
+											p The atmosphere should be contaminated as little as possible by pollutants.
+										li
+											p Energy should be used as efficiently as possible.

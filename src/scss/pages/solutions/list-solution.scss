@@ -1,0 +1,141 @@
+.list-solution {
+	margin-top: 80px;
+
+	.introduce {
+		padding: 0 138px;
+
+		figure {
+			display     : flex;
+			flex-wrap   : wrap;
+			align-items : center;
+			margin-right: -20px;
+			margin-left : -20px;
+
+			.img {
+				-ms-flex        : 0 0 100%;
+				-webkit-box-flex: 0;
+				flex            : 0 0 675px;
+				max-width       : 675px;
+				padding-right   : 20px;
+				padding-left    : 20px;
+				height          : 450px;
+			}
+
+			figcaption {
+				-ms-flex-preferred-size: 0;
+				-ms-flex-positive      : 1;
+				-webkit-box-flex       : 1;
+				flex-basis             : 0;
+				flex-grow              : 1;
+				max-width              : 100%;
+				padding-right          : 20px;
+				padding-left           : 20px;
+			}
+		}
+	}
+
+	.list-item-solution {
+		margin-top: 50px;
+		padding   : 50px 138px;
+		background: #DAE4EA;
+	}
+
+	.description {
+		margin-top: 25px;
+		height    : 145px;
+		overflow  : hidden;
+	}
+
+	@media (max-width: 1440px) {
+
+		.introduce {
+			padding: 0;
+		}
+
+		.list-item-solution {
+			padding: 40px 0;
+		}
+
+		.introduce {
+			figure {
+				margin-right: -20px;
+				margin-left : -20px;
+
+				.img {
+					-ms-flex        : 0 0 100%;
+					-webkit-box-flex: 0;
+					flex            : 0 0 50%;
+					max-width       : 50%;
+					height          : 350px;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 1024.98px) {
+		margin-top: 40px;
+
+		.introduce {
+			figure {
+				position    : relative;
+				margin-left : -10px;
+				margin-right: -10px;
+
+				.img {
+					height       : auto;
+					padding-right: 10px;
+					padding-left : 10px;
+				}
+
+				figcaption {
+					padding-right: 10px;
+					padding-left : 10px;
+				}
+			}
+		}
+
+		.item-solution {
+			margin-bottom: 25px;
+
+			.description {
+				margin-top: 10px;
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	@media (max-width: 575.98px) {
+		margin-top: 25px;
+
+		.introduce {
+			figure {
+				.img {
+					-ms-flex        : 0 0 100%;
+					-webkit-box-flex: 0;
+					flex            : 0 0 100%;
+					max-width       : 100%;
+				}
+
+				figcaption {
+					margin-top: 15px;
+				}
+			}
+		}
+
+		.list-item-solution {
+			margin-top: 25px;
+			padding   : 25px 0;
+		}
+
+		.block-item-general {
+			figure {
+				.img {
+					height: 250px;
+				}
+			}
+		}
+	}
+}

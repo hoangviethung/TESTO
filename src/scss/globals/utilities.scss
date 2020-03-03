@@ -136,6 +136,10 @@ body {
 		font-size: 30px;
 	}
 
+	time {
+		display: block;
+	}
+
 	&.line-center-90 {
 		h3 {
 			position      : relative;
@@ -222,6 +226,12 @@ body {
 			&.swiper-pagination-bullet-active {
 				background-color: map-get($mau, main-2);
 			}
+		}
+	}
+
+	@media (max-width: 767.98px) {
+		.swiper-pagination {
+			display: none;
 		}
 	}
 }
@@ -384,20 +394,6 @@ body {
 	align-items: center;
 	background : #DAE4EA;
 
-	&:nth-child(2n+1) {
-		.content {
-			margin-left  : auto;
-			padding-right: 60px;
-		}
-	}
-
-	&:nth-child(2n) {
-		.content {
-			margin-right: auto;
-			padding-left: 60px;
-		}
-	}
-
 	.image,
 	.content {
 		-ms-flex        : 0 0 100%;
@@ -408,8 +404,8 @@ body {
 
 	.content {
 		max-width : 670px;
-		max-height: 415px;
-		overflow-y: auto;
+		margin    : 0 auto;
+		overflow-y: hidden;
 	}
 
 	.image {
@@ -431,23 +427,11 @@ body {
 	@media (max-width: 1439.98px) {
 		.content {
 			max-width: 560px;
+			padding  : 20px;
 		}
 	}
 
 	@media (max-width: 1199.98px) {
-
-		&:nth-child(2n+1) {
-			.content {
-				padding-right: 30px;
-			}
-		}
-
-		&:nth-child(2n) {
-			.content {
-				padding-left: 30px;
-			}
-		}
-
 		.content {
 			max-width: 485px;
 		}
@@ -462,16 +446,13 @@ body {
 			content: '';
 		}
 
-		&:nth-child(2n+1),
-		&:nth-child(2n) {
-			.content {
-				padding-top   : 25px;
-				padding-right : 25px;
-				padding-bottom: 25px;
-				padding-left  : 25px;
-				margin-right  : unset;
-				margin-left   : unset;
-			}
+		.content {
+			padding-top   : 25px;
+			padding-right : 25px;
+			padding-bottom: 25px;
+			padding-left  : 25px;
+			margin-right  : unset;
+			margin-left   : unset;
 		}
 
 		.image,
