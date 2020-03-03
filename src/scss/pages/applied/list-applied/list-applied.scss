@@ -1,0 +1,57 @@
+.list-applied {
+	.banner {
+		width : 915px;
+		margin: 0 auto;
+	}
+
+	.list-item-applied {
+		margin-top: 80px;
+		padding   : 0 138px;
+	}
+
+	.item-applied {
+		margin-bottom: 45px;
+
+		.block-item-general {
+			figure {
+				.img {
+					height: 375px;
+				}
+			}
+		}
+
+		.description {
+			margin-top: 10px;
+		}
+	}
+
+	@media (max-width: 1439.98px) {
+		.list-item-applied {
+			padding: 0;
+		}
+	}
+
+	@media (max-width: 1024.98px) {
+		.banner {
+			width: 100%;
+		}
+
+		.item-applied {
+			margin-bottom: 20px;
+
+			.block-item-general {
+				figure {
+					.img {
+						height: 290px;
+					}
+				}
+			}
+		}
+	}
+
+	@media (max-width: 767.98px) {
+		.list-item-applied {
+			margin-top: 40px;
+		}
+	}
+}

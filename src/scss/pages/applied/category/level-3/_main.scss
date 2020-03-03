@@ -1,0 +1,9 @@
+.category-applied-level-3 {
+	margin-top: 80px;
+	// IMPORT HERE !!!
+	@import 'block-1';
+
+	@media (max-width: 1024.98px) {
+		margin-top: 25px;
+	}
+}

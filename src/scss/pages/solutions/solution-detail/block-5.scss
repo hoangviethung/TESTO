@@ -1,0 +1,31 @@
+.block-5 {
+	margin: 40px 0 40px;
+
+	.list-expert-corner {
+		margin: 40px 275px 0;
+	}
+
+	.block-item-general {
+		figure {
+			.img {
+				height: 165px;
+			}
+		}
+	}
+
+	@media (max-width: 1439.98px) {
+		.list-expert-corner {
+			margin: 40px 0 0 0;
+		}
+	}
+
+	@media (max-width: 1024.98px) {
+		.list-expert-corner {
+			margin: 25px 0 0 0;
+		}
+
+		.item-expert-corner {
+			margin-bottom: 15px;
+		}
+	}
+}

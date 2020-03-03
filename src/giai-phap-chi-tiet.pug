@@ -1,0 +1,16 @@
+extends _components/_layout/_layout.pug
+
+block var
+	- let title = 'Chi chiết giải pháp';
+	- let bodyClass = 'solutions-detail-page';
+
+block banner,breadcrumb
+	include ./_components/_layout/_breadcrumb
+block main
+	section.solution-detail
+		include ./_components/solutions/solution-detail/block-1
+		include ./_components/solutions/solution-detail/block-2
+		include ./_components/solutions/solution-detail/block-3
+		include ./_components/solutions/solution-detail/block-4
+		include ./_components/solutions/solution-detail/block-5
+block scripts

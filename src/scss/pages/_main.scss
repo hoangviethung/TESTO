@@ -1,11 +1,31 @@
 @import 'banner/main';
 @import 'index/main';
 
+/////////////////////////////////////////////////
+
 // PRODCUCT HERE !!!
 @import 'product/list-product/main';
+// APPLIED HERE !!!
+@import 'applied/list-applied/main';
+
+/////////////////////////////////////////////////
+
 // CATEGORY PRODUCT !!!
 @import 'product/category/main';
+// APPLIED APPLIED !!!
+@import 'applied/category/main';
+
+/////////////////////////////////////////////////
+
 // PRODUCT DETAIL HERE !!!
 @import 'product/product-detail/main';
+
+/////////////////////////////////////////////////
+
 // PRODUCT OTHER HERE !!!
 @import 'product/product-others/main';
+
+/////////////////////////////////////////////////
+
+// SOLUTIONS HEHRE !!!
+@import 'solutions/main';

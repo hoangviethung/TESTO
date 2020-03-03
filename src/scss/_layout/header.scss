@@ -190,6 +190,16 @@ header {
 		}
 	}
 
+	@media (max-width: 1299.98px) {
+		.main-nav {
+			.nav-list {
+				.nav-item {
+					margin-right: 15px;
+				}
+			}
+		}
+	}
+
 	@media (max-width: 1024.98px) {
 		padding: 10px 0;
 

@@ -1,0 +1,12 @@
+extends _components/_layout/_layout.pug
+
+block var
+	- let title = 'Danh sách giải pháp';
+	- let bodyClass = 'list-solution';
+
+block banner,breadcrumb
+	include ./_components/banner/b-1
+	include ./_components/_layout/_breadcrumb.pug
+block main
+	include ./_components/solutions/list-solution
+block scripts

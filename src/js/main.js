@@ -160,6 +160,30 @@ const produdctDetailSlider = () => {
 	});
 }
 
+const solutionSliderBlock3 = () => {
+	var swiper = new Swiper('.slider-solution-detai-block-3 .swiper-container', {
+		slidesPerView: 1,
+		spaceBetween: 0,
+		loop: true,
+		speed: 1000,
+		simulateTouch: false,
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+		},
+		navigation: {
+			nextEl: '.slider-solution-detai-block-3 .swiper-button-next',
+			prevEl: '.slider-solution-detai-block-3 .swiper-button-prev',
+		},
+		breakpoints: {
+			575.98: {
+				slidesPerView: 2,
+				spaceBetween: 15,
+			}
+		}
+	})
+}
+
 // HEADER HERE !!!
 const activeHeaderWhenScroll = () => {
 	const heightHeader = document.querySelector('header').offsetHeight;
@@ -224,13 +248,26 @@ const tabProductDetailMobile = () => {
 	}
 }
 
+const setHeightOverFolowBySomeElement = () => {
+	const heightGet = $('[data-getHeight]').height();
+	const heightSet = $('[data-setHeight]');
+	const responsive = heightSet.attr('data-setHeight');
+	if (window.innerWidth > responsive) {
+		heightSet.css('max-height', heightGet)
+	}
+}
+
 document.addEventListener('DOMContentLoaded', () => {
-	Loading();
+	Loading().then(() => {
+		setHeightThumbnailSliderProductDetail();
+		setHeightOverFolowBySomeElement();
+	});
 	// SLIDER HERE !!!
 	homeSlider();
 	homeProductSlider();
 	productOthersSlider();
 	produdctDetailSlider();
+	solutionSliderBlock3();
 	setHeightThumbnailSliderProductDetail();
 	// HEADER HERE !!!
 	activeHeaderWhenScroll();
@@ -243,4 +280,10 @@ document.addEventListener('DOMContentLoaded', () => {
 	tabProductDetailMobile();
 	// TAB
 	const tabInformationDetail = new Tab('.block-tab-information-detail');
+	// GET HEIGHT SOMWE ELEMENT
+});
+
+window.addEventListener("resize", () => {
+	setHeightOverFolowBySomeElement();
+	setHeightThumbnailSliderProductDetail();
 });

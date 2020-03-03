@@ -1,0 +1,13 @@
+extends _components/_layout/_layout.pug
+
+block var
+	- let title = 'Danh mục ứng dụng cấp 2';
+	- let bodyClass = 'category-applied-level2-page';
+
+block banner,breadcrumb
+	include ./_components/_layout/_breadcrumb.pug
+block main
+	section.category-applied-level-2
+		// BLOCK 1 TRANG DANH MỤC ỨNG DỤNG - CẤP 2
+		include ./_components/applied/category/level-2/block-1
+block scripts
