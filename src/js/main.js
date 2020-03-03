@@ -212,6 +212,20 @@ const toggleMenuMobile = () => {
 	})
 }
 
+const menuMutipLevel = () => {
+	// THÊM CLASS HASSUB MENU
+	$('.sub-menu').parent('.nav-item').addClass('has-sub');
+	// LEVEL 1
+	const lv1 = $('.main-nav .nav-list').children('.nav-item');
+	lv1.addClass('level-1');
+	// LEVEL 2
+	const lv2 = $('.nav-item.has-sub.level-1').children('.sub-menu').children('.nav-item');
+	lv2.addClass('level-2');
+	// LEVEL 3
+	const lv3 = $('.nav-item.has-sub.level-2').children('.sub-menu').children('.nav-item');
+	lv3.addClass('level-3');
+}
+
 // CHECK LAYOUT CÓ BANNER KHÔNG
 const checkLayoutBanner = () => {
 	const mainSlider = $('.main-page-slider');
@@ -366,6 +380,7 @@ function showBackToTop() {
 document.addEventListener('DOMContentLoaded', () => {
 	Loading().then(() => {
 		setHeightThumbnailSliderProductDetail();
+		// GET HEIGHT SOMWE ELEMENT
 		setHeightOverFolowBySomeElement();
 	});
 	// SLIDER HERE !!!
@@ -377,6 +392,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	setHeightThumbnailSliderProductDetail();
 	// HEADER HERE !!!
 	activeHeaderWhenScroll();
+	menuMutipLevel();
 	// CHECK BANNER IN LAYOUT
 	checkLayoutBanner();
 	toggleMenuMobile();
@@ -386,8 +402,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	tabProductDetailMobile();
 	// TAB
 	const tabInformationDetail = new Tab('.block-tab-information-detail');
-	// GET HEIGHT SOMWE ELEMENT
-
 	// HOÀNG JS
 	aboutMember();
 	newBanner();
