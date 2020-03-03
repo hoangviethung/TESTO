@@ -1,0 +1,171 @@
+.nb-1 {
+	position: relative;
+	width: 100%;
+	float: left;
+	padding-bottom: 50px;
+	.line{
+		h3{
+			&::after{
+				content: '';
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				transform : translateX(0);
+				background: #E4B354;
+				width     : 90%;
+				height    : 5px;
+			}
+		}
+	}
+	.new-promotion {
+		position: relative;
+		width: 100%;
+
+		.left-box {
+			width: 100%;
+			height: 450px;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+
+			@media(max-width: 1025px) {
+				height: auto;
+			}
+
+			@media(max-width: 769px) {
+				height: auto;
+			}
+		}
+
+		.swiper-button-prev {
+			width: 70px;
+			height: 70px;
+			top: 50%;
+			left: -35px;
+			z-index: 999;
+
+			&::after {
+				content: '';
+				width: 100%;
+				height: 100%;
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-image: url(..\assets\icons\back-slide.png);
+			}
+
+			@media(max-width: 1025px) {
+				display: none;
+			}
+		}
+
+		.right-box {
+			position: relative;
+
+			.content {
+				max-width: 630px;
+				margin: 0 auto;
+
+				.desc {
+					height: 330px;
+					overflow: hidden;
+					margin-bottom: 15px;
+
+					.title {
+						width: 100%;
+
+						a {
+							font-size: 16px;
+							color: #545454;
+							font-weight: 600;
+							text-decoration: none;
+						}
+
+						span {
+							font-size: 16px;
+							font-weight: 600;
+							color: #FF9E0C;
+							margin-top: 20px;
+						}
+
+						@media(max-width: 1025px) {
+							a {
+								font-size: 14px;
+								color: #fff;
+							}
+
+							span {
+								font-size: 14px;
+							}
+						}
+					}
+					.text-content{
+						max-width: 630px;
+						p {
+							font-size: 16px;
+							font-weight: 400;
+							color: #545454;
+							margin: 10px 0 10px;
+						}
+	
+						ul {
+							padding: 0;
+	
+							li {
+								margin-bottom: 10px;
+								font-size: 16px;
+								color: #545454;
+							}
+						}
+						@media(max-width: 1025px) {
+							p {
+								font-size: 14px;
+								color: #fff;
+							}
+	
+							ul {
+								li {
+									font-size: 14px;
+									color: #fff;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			@media (max-width: 1024.98px) {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				padding: 0;
+				background: rgba($color: #000000, $alpha: .5);
+				.content {
+					max-width: 100%;
+					height: 100%;
+					padding: 50px;
+					.desc {
+						max-height: 100%;
+					}
+				}
+			}
+			@media (max-width: 768px){
+				.content {
+					max-width: 100%;
+					height: 100%;
+					padding: 20px;
+					.desc {
+						max-height: 100%;
+						.text-content{
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,9 @@
+.c-t-4{
+	padding-bottom: 50px;
+	.block-item{
+		padding: 0;
+	}
+	@media(max-width: 1025px){
+		padding-bottom: 30px;
+	}
+}

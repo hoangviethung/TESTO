@@ -1,0 +1,15 @@
+extends _components/_layout/_layout.pug
+
+block var
+	- let title = 'Về Chúng Tôi';
+	- let bodyClass = 'about-page';
+
+block banner,breadcrumb
+	include ./_components/banner/b-1
+	include .\_components\_layout\_breadcrumb
+block main
+	include ./_components/gioi-thieu/a-1.pug
+	include ./_components/gioi-thieu/a-2.pug
+	include ./_components/gioi-thieu/a-3.pug
+	include ./_components/gioi-thieu/a-4.pug
+block scripts

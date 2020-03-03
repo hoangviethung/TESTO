@@ -114,6 +114,19 @@ body {
 	&-1 {
 		-webkit-line-clamp: 1;
 	}
+}
+
+.block-banner {
+	.swiper-pagination {
+		.swiper-pagination-bullet {
+			width           : 15px;
+			height          : 15px;
+			border          : 2px solid #ffffff;
+			opacity         : 1;
+			border-radius   : 50%;
+			background-color: map-get($mau, main);
+			transition      : all .2s ease-in-out;
+			margin          : 0 15px;
 
 	&-2 {
 		-webkit-line-clamp: 2;
@@ -479,5 +492,11 @@ body {
 			height  : 100%;
 			z-index : 20;
 		}
+	}
+	&.limit-3{
+		-webkit-line-clamp: 3;
+	}
+	&.limit-4{
+		-webkit-line-clamp: 4;
 	}
 }

@@ -1,0 +1,120 @@
+.lh-1{
+	position: relative;
+    width: 100%;
+	float: left;
+	margin-top: 200px;
+	padding-bottom: 50px;
+	.contact-section{
+		.contact-form{
+			width: 100%;
+			background-color: #DAE4EA;
+			padding: 50px;
+			.form-title{
+				position: relative;
+				text-align: center;
+				margin-bottom: 70px;
+				h2{
+					font-size: 28px;
+					font-weight: 700;
+					color: #FF9E0C;
+				}
+				&::before{
+					content: '';
+					position: absolute;
+					bottom: -30%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 115px;
+					height: 3px;
+					background-color: #FF9E0C;
+				}
+				@media(max-width: 1025px){
+					margin-bottom: 30px;
+					h2{
+						font-size: 20px;
+					}
+				}
+			}
+			form{
+				position: relative;
+				width: 100%;
+				.form-control{
+					width: 100%;
+					height: 53px;
+					margin-bottom: 10px;
+					padding-left: 20px;
+					border: none;
+					border-radius: 5px;
+				}
+				textarea.form-control{
+					height: 145px;
+				}
+				button.btn-form{
+					text-decoration: none;
+					background: none;
+					color: #545454;
+					font-size: 20px;
+					font-weight: 700;
+					position: absolute;
+					bottom: -15%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					border-bottom: solid 3px #FF9E0C;
+					border-top: none;
+					border-left: none;
+					border-right: none;
+				}
+			}
+			@media(max-width: 1025px){
+				padding: 25px;
+			}
+		}
+		.contact-info{
+			position: relative;
+			width: 100%;
+			height: 320px;
+			float: right;
+			background-image: url(..\assets\icons\map-lien-he.svg);
+			background-size: 100% 100%;
+			margin-left: auto;
+			.desc{
+				padding-left: 30px;
+				width: 423px;
+				position: absolute;
+				left: 0;
+				bottom: -75%;
+				h2{
+					font-size: 28px;
+					font-weight: 600;
+					color: #000;
+					margin-bottom: 30px;
+				}
+				ul{
+					padding: 0;
+					li{
+						list-style: none;
+						margin-bottom: 30px;
+						line-height: 30px;
+						.icon{
+							float: left;
+						}
+						p.info{
+							padding-left: 50px;
+							font-size: 24px;
+							font-weight: 400;
+						}
+					}
+				}
+				@media(max-width: 1025px){
+					padding: 20px;
+					h2{
+						font-size: 25px;
+					}
+					p{
+						font-size: 20px !important;
+					}
+				}
+			}
+		}
+	}
+}
