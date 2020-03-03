@@ -323,7 +323,7 @@ function ajaxForm() {
 		const name = $('#name').val();
 		const phone = $('#phone').val();
 		const email = $('#email').val();
-		const noidung = $('#noidung').val();
+		const content = $('#content').val();
 		$.ajax({
 			type: "POST",
 			url: url,
@@ -332,7 +332,7 @@ function ajaxForm() {
 				name: name,
 				phone: phone,
 				email: email,
-				noidung: noidung
+				content: content
 			},
 			success: function(res) {
 				if (res.Code === 200) {

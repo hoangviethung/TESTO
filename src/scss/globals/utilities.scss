@@ -114,6 +114,12 @@ body {
 	&-1 {
 		-webkit-line-clamp: 1;
 	}
+	&-2{
+		-webkit-line-clamp: 2;
+	}
+	&-5{
+		-webkit-line-clamp: 5;
+	}
 }
 
 .block-banner {

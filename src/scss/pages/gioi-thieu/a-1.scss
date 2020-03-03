@@ -4,7 +4,7 @@
 	float: left;
 	padding-bottom: 50px;
 	.line{
-		margin-top: 50px;
+		margin-top: 30px;
 		h3{
 			&::after{
 				width: 50%;
@@ -19,20 +19,30 @@
 		background-color: #DAE4EA;
 		.info-banner{
 			max-width: 100%;
-			max-height: 100%;
 			overflow: hidden;
-			img{
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
+			.img{
+				height: 470px;
+				img{
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+				@media(max-width: 768px){
+					height: 350px;
+				}
 			}
 		}
 		.info-text{
 			position: relative;
-			padding: 50px;
 			.content{
-				max-width: 690px;
+				max-width: 100%;
+				height: 100%;
 				margin: 0 auto;
+				align-items: center;
+				display: flex;
+				@media(max-width: 1500px){
+					width: 600px;
+				}
 				.desc{
 					.title-content{
 						font-size: 16px;
@@ -71,7 +81,7 @@
 							padding-left: 20px;
 							margin-top: 20px;
 							li{
-								list-style-image: url(..\assets\icons\checked.png);;
+								list-style-image: url(..\assets\icons\checked.svg);
 								margin-top: 20px;
 								font-size: 16px;
 								font-weight: 400;

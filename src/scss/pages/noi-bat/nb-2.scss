@@ -3,6 +3,7 @@
     width: 100%;
 	float: left;
 	padding-bottom: 50px;
+	overflow: hidden;
 	.tech-sec{
 		position: relative;
 		width: 100%;
@@ -11,16 +12,22 @@
 		.tech-left{
 			position: relative;
 			max-width: 100%;
-			height: 100%;
-			img{
-				width: 100%;
+			height: 620px;
+			.img{
 				height: 100%;
-				object-fit: cover;
+				img{
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+			@media(max-width: 768px){
+				height: 350px;
 			}
 		}
 		.tech-right{
 			width: 100%;
-			padding: 20px;
+			padding: 30px;
 			.content{
 				max-width: 100%;
 				.line{
@@ -84,10 +91,6 @@
 						padding: 20px;
 					}
 				}
-			}
-			
-			@media(max-width: 1025px){
-				padding: 0;
 			}
 		}
 	}

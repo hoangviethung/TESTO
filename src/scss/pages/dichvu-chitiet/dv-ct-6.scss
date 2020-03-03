@@ -29,7 +29,7 @@
 					height: 100%;
 					background-size: cover;
 					background-repeat: no-repeat;
-					background-image: url(..\assets\icons\back-slide.png);
+					background-image: url(..\assets\icons\prev-slider-product.svg);
 				}
 				@media(max-width: 1025px) {
 					display: none;
@@ -47,7 +47,7 @@
 					height: 100%;
 					background-size: cover;
 					background-repeat: no-repeat;
-					background-image: url(..\assets\icons\next.png);
+					background-image: url(..\assets\icons\next-slider-product.svg);
 				}
 				@media(max-width: 1025px) {
 					display: none;
@@ -74,7 +74,7 @@
 					ul{
 						.list-item{
 							position: relative;
-							list-style: url('../assets/icons/noun_Download_1640716.png');
+							list-style: url('../assets/icons/download.svg');
 							margin-bottom: 10px;
 							&::after{
 								content: '';
