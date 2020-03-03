@@ -257,6 +257,115 @@ const setHeightOverFolowBySomeElement = () => {
 	}
 }
 
+<<<<<<< HEAD
+=======
+function aboutMember() {
+	var swiper = new Swiper('.member-slide', {
+		centeredSlides: true,
+		slidesPerView: 3,
+		speed: 1000,
+		loop: true,
+		autoplay: true,
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		breakpoints: {
+			768: {
+				slidesPerView: 3,
+				spaceBetween: 20,
+			},
+			375: {
+				slidesPerView: 1,
+				spaceBetween: 10,
+			}
+		},
+	});
+}
+
+function newBanner() {
+	var swiper = new Swiper('.new-slide, .hr, .download-slide', {
+		pagination: {
+			el: '.swiper-pagination',
+			type: 'fraction',
+		},
+		centeredSlides: true,
+		speed: 1000,
+		loop: true,
+		spaceBetween: 0,
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: false,
+		},
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+	});
+}
+
+function ajaxForm() {
+	$('form button').on('click', function(e) {
+		e.preventDefault();
+		const url = $(this).attr('data-url');
+		const name = $('#name').val();
+		const phone = $('#phone').val();
+		const email = $('#email').val();
+		const noidung = $('#noidung').val();
+		$.ajax({
+			type: "POST",
+			url: url,
+			data: {
+				url: url,
+				name: name,
+				phone: phone,
+				email: email,
+				noidung: noidung
+			},
+			success: function(res) {
+				if (res.Code === 200) {
+					alert('Thành công');
+				} else {
+					alert('Thất bại');
+				}
+			}
+		});
+	});
+}
+
+function responText() {
+	$(window).resize(function() {
+		var width = $(window).width();
+		if (width < 658) {
+			$('.nb-1, .nb-4').find('.text-content').css({
+				display: "none"
+			});
+		} else {
+			$('.nb-1, .nb-4').find('.text-content').css({
+				display: "block"
+			});
+		}
+	});
+}
+
+function showBackToTop() {
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 0) {
+			$('#back-to-top').addClass('active');
+		} else {
+			$('#back-to-top').removeClass('active');
+		}
+	});
+
+	$("#back-to-top").on("click", function(e) {
+		e.preventDefault();
+		$("html,body").animate({
+			scrollTop: 0
+		})
+	})
+}
+
+>>>>>>> hung
 document.addEventListener('DOMContentLoaded', () => {
 	Loading().then(() => {
 		setHeightThumbnailSliderProductDetail();
@@ -281,6 +390,13 @@ document.addEventListener('DOMContentLoaded', () => {
 	// TAB
 	const tabInformationDetail = new Tab('.block-tab-information-detail');
 	// GET HEIGHT SOMWE ELEMENT
+
+	// HOÀNG JS
+	aboutMember();
+	newBanner();
+	ajaxForm();
+	responText();
+	showBackToTop();
 });
 
 window.addEventListener("resize", () => {

@@ -1,0 +1,15 @@
+extends _components/_layout/_layout.pug
+
+block var
+	- let title = 'Tin Nổi Bật';
+	- let bodyClass = 'tinnoibat-page';
+
+block banner,breadcrumb
+	include .\_components\banner\b-1
+	include .\_components\_layout\_breadcrumb
+block main
+	include ./_components/noi-bat/nb-1.pug
+	include ./_components/noi-bat/nb-2.pug
+	include ./_components/noi-bat/nb-3.pug
+	include ./_components/noi-bat/nb-4.pug
+block scripts

@@ -1,0 +1,20 @@
+.c-t-1{
+	padding-bottom: 50px;
+	margin-top: 80px;
+	.content{
+		width: 100%;
+		padding: 0 78px;
+		text-align: justify;
+		.block-title{
+			p{
+				font-size: 16px;
+			}
+		}
+		@media(max-width: 1025px){
+			padding: 0px;
+		}
+	}
+	@media(max-width: 1025px){
+		padding-bottom: 30px;
+	}
+}
