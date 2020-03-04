@@ -797,4 +797,50 @@
 			}
 		}
 	}
+	&.desc-item-footer-block-1{
+		h3 {
+			font-size     : 21px;
+			font-weight   : 700;
+			text-transform: uppercase;
+			color         : #707070;
+		}
+		p {
+			color: #707070;
+			margin-bottom: 15px;
+			font-weight : 400;
+			font-size: 16px;
+		}
+
+		ul {
+			list-style  : none;
+			padding-left: 0;
+			margin-top  : 20px;
+
+			li {
+				position     : relative;
+				padding-left : 25px;
+				margin-bottom: 5px;
+
+				&:after {
+					content          : '';
+					position         : absolute;
+					left             : 0;
+					top              : 7px;
+					width            : 12px;
+					height           : 11px;
+				}
+			}
+		}
+		@media (max-width: 1024.98px) {
+			p {
+				color: #ffffff;
+			}
+		}
+
+		@media (max-width: 767.98px) {
+			p {
+				font-size: 14px;
+			}
+		}
+	}
 }
