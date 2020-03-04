@@ -2,6 +2,7 @@
 	position: relative;
     width: 100%;
 	float: left;
+	margin-top: 50px;
 	padding-bottom: 50px;
 	.image-content{
 		padding: 0;
@@ -15,5 +16,8 @@
 				position: static;
 			}
 		}
+	}
+	@media(max-width: 1024.98px){
+		padding-bottom: 30px;
 	}
 }

@@ -714,6 +714,47 @@
 			}
 		}
 	}
+	&.desc-served-detail-block-4{
+		h3 {
+			font-size     : 16px;
+			font-weight   : 700;
+			text-transform: uppercase;
+			color         : #707070;
+		}
+
+		h4 {
+			font-size     : 16px;
+			color         : #FF9E0C;
+			font-weight   : 700;
+			text-transform: uppercase;
+		}
+
+		p {
+			font-weight  : 300;
+			color        : #707070;
+			margin-bottom: 15px;
+		}
+
+		@media (max-width: 1024.98px) {
+
+			h3,
+			p{
+				color: #ffffff;
+			}
+			h4{
+				color: #FF9E0C;
+			}
+		}
+
+		@media (max-width: 767.98px) {
+
+			h4,
+			h3,
+			p {
+				font-size: 14px;
+			}
+		}
+	}
 	&.desc-item-about-block-1{
 		p {
 			color: #707070;

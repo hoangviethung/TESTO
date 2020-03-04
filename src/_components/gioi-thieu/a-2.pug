@@ -1,18 +1,16 @@
 section.a-2
 	.container
-		.block-title.line-center-50.color-gray.ta-c.mb-30px
-			h3 THÀNH VIÊN
-		.row
-			.col-lg-10.m-auto
-				.swiper-container.member-slide
-					.swiper-wrapper
-						-for(i=1; i<4; i++)
-							.swiper-slide
-								.slide-box
-									.img-slide
-										img(src="./assets/images/slide/member-"+i+".png", alt="")
-									.slide-text.m-auto
-										h2.lcl.lcl-1 MR. DENNIS KAM
-										p.lcl.lcl-1 Lorem ipsum dolor sit amet
-				.swiper-button-next
-				.swiper-button-prev
+		.member-block.m-auto
+			.block-title.line-center-50.color-gray.ta-c.mb-30px
+				h3 THÀNH VIÊN
+			.swiper-container.member-slide
+				.swiper-wrapper
+					-for(i=1; i<4; i++)
+						.swiper-slide.slide-box
+							.img-slide
+								img(src="./assets/images/slide/member-"+i+".png", alt="")
+							.slide-text.m-auto
+								h2.lcl.lcl-1 MR. DENNIS KAM
+								p.lcl.lcl-1 Lorem ipsum dolor sit amet
+			.swiper-button-next
+			.swiper-button-prev
