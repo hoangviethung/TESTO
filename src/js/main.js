@@ -1,6 +1,7 @@
 import Cookie from "./lib/Cookie";
 import Loading from "./lib/Loading";
 import Tab from "./lib/Tab";
+import getSVG from "./lib/GetSVG"
 
 // SLIDER HERE !!!
 const homeSlider = () => {
@@ -392,6 +393,7 @@ function showBackToTop() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+	getSVG();
 	Loading().then(() => {
 		setHeightThumbnailSliderProductDetail();
 		// GET HEIGHT SOMWE ELEMENT
