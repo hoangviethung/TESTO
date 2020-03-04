@@ -71,7 +71,7 @@ const homeProductSlider = () => {
 			1100: {
 				slidesPerView: 3,
 			},
-			768: {
+			575: {
 				slidesPerView: 2,
 			}
 		},
