@@ -202,12 +202,14 @@ const toggleMenuMobile = () => {
 		$(this).siblings('.main-nav').toggleClass('active');
 		$('body').toggleClass('disabled')
 		$('#overlay').toggleClass('active');
+		$('.sub-menu').removeClass('active');
 	});
 
 	$('#overlay').on('click', function() {
 		$(this).removeClass('active');
 		$('body').removeClass('disabled')
 		$('.main-nav').removeClass('active');
+		$('.sub-menu').removeClass('active');
 		$('.toggle-menu.mobile').removeClass('active');
 	})
 }
@@ -224,6 +226,18 @@ const menuMutipLevel = () => {
 	// LEVEL 3
 	const lv3 = $('.nav-item.has-sub.level-2').children('.sub-menu').children('.nav-item');
 	lv3.addClass('level-3');
+}
+
+const menuMutipLevelMobile = () => {
+	$('.has-sub').on('click', function(e) {
+		e.stopPropagation();
+		$(e.currentTarget).children('.sub-menu').addClass('active');
+	});
+
+	$('.back').on('click', function(e) {
+		e.stopPropagation();
+		$(e.currentTarget).closest('.sub-menu').removeClass('active');
+	})
 }
 
 // CHECK LAYOUT CÓ BANNER KHÔNG
@@ -393,6 +407,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	// HEADER HERE !!!
 	activeHeaderWhenScroll();
 	menuMutipLevel();
+	menuMutipLevelMobile();
 	// CHECK BANNER IN LAYOUT
 	checkLayoutBanner();
 	toggleMenuMobile();
