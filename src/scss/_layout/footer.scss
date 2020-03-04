@@ -1,0 +1,22 @@
+footer{
+	float: left;
+	width: 100%;
+	background-color: #DAE4EA;
+	display: flex;
+	.footer-block{
+		position: relative;
+		float: left;
+		width: 60%;
+		height: 420px;
+		padding: 50px;
+		.block-content{
+			&:nth-child(1){
+				width: 310px;
+			}
+		}
+	}
+	.footer-map{
+		float: right;
+		width: 40%;
+	}
+}

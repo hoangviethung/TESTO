@@ -299,7 +299,7 @@ function aboutMember() {
 		breakpoints: {
 			768: {
 				slidesPerView: 3,
-				spaceBetween: 20,
+				spaceBetween: 10,
 			},
 			375: {
 				slidesPerView: 1,

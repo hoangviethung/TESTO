@@ -2,112 +2,22 @@
 	position: relative;
     width: 100%;
 	float: left;
+	margin-top: 50px;
 	padding-bottom: 50px;
-	.line{
-		margin-top: 30px;
-		h3{
-			&::after{
-				width: 50%;
+	.image-content{
+		padding: 0;
+		@media(max-width: 1024.98px){
+			.content{
+			    display: flex;
+				align-items: center;
+				margin: auto;
+				max-width: 690px;
+				height: auto;
+				position: static;
 			}
 		}
 	}
-	.info-testo{
-		position: relative;
-		width: 100%;
-		padding: 0;
-		margin: 0;
-		background-color: #DAE4EA;
-		.info-banner{
-			max-width: 100%;
-			overflow: hidden;
-			.img{
-				height: 470px;
-				img{
-					width: 100%;
-					height: 100%;
-					object-fit: cover;
-				}
-				@media(max-width: 768px){
-					height: 350px;
-				}
-			}
-		}
-		.info-text{
-			position: relative;
-			.content{
-				max-width: 100%;
-				height: 100%;
-				margin: 0 auto;
-				align-items: center;
-				display: flex;
-				@media(max-width: 1500px){
-					width: 600px;
-				}
-				.desc{
-					.title-content{
-						font-size: 16px;
-						font-weight: 700;
-						a{
-							color: #545454;
-						}
-					}
-					span{
-						font-size: 16px;
-						font-weight: 600;
-						color: #FF9E0C;
-					}
-					.text-content{
-						margin-top: 20px;
-						p{
-							font-size: 16px;
-							font-weight: 400;
-							color: #707070;
-							line-height: 30px;
-						}
-						@media(max-width: 1025px){
-							p{
-								font-size: 14px;	
-							}
-						}
-					}
-					.list-item{
-						max-width: 630px;
-						p{
-							font-size: 16px;
-							font-weight: 400;
-							color: #545454;
-						}
-						ul{
-							padding-left: 20px;
-							margin-top: 20px;
-							li{
-								list-style-image: url(..\assets\icons\checked.svg);
-								margin-top: 20px;
-								font-size: 16px;
-								font-weight: 400;
-								color: #545454;
-							}
-							@media(max-width: 1025px){
-								padding: 0 20px;
-								li{
-									font-size: 14px;
-								}
-							}
-						}
-						@media(max-width: 1025px){
-							p{
-								font-size: 14px;
-							}
-						}
-					}
-				}
-				@media(max-width: 1025px){
-					padding: 20px 20px;
-				}
-			}
-			@media(max-width: 1025px){
-				padding: 0;
-			}
-		}
+	@media(max-width: 1024.98px){
+		padding-bottom: 30px;
 	}
 }
