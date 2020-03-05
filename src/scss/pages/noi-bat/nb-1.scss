@@ -5,9 +5,10 @@
 	padding-bottom: 50px;
 	margin-top: 80px;
 	.new-promotion {
-		position: relative;
-		width: 100%;
-		padding: 0 138px;
+		margin: 0 138px;
+		.new-block{
+			position: relative;
+		}
 		.line{
 			h3{
 				&::after{
@@ -22,20 +23,12 @@
 		}
 		.left-box {
 			width: 100%;
-			height: 450px;
+			max-height: 450px;
 
 			img {
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
-			}
-
-			@media(max-width: 1025px) {
-				height: auto;
-			}
-
-			@media(max-width: 769px) {
-				height: auto;
 			}
 		}
 
@@ -43,7 +36,8 @@
 			width: 70px;
 			height: 70px;
 			top: 50%;
-			left: 105px;
+			transform: translateY(-50%);
+			left: -35px;
 			z-index: 999;
 
 			&::after {
@@ -179,7 +173,7 @@
 			}
 		}
 		@media(max-width: 1439.98px){
-			padding: 0;
+			margin: 0;
 		}
 	}
 	@media(max-width: 1024.98px){

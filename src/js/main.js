@@ -312,11 +312,6 @@ function aboutMember() {
 
 function newBanner() {
 	var swiper = new Swiper('.new-slide, .hr, .download-slide', {
-		pagination: {
-			el: '.swiper-pagination',
-			type: 'fraction',
-		},
-		centeredSlides: true,
 		speed: 1000,
 		loop: true,
 		spaceBetween: 0,
