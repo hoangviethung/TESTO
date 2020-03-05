@@ -390,6 +390,7 @@ function showBackToTop() {
 document.addEventListener('DOMContentLoaded', () => {
 	getSVG();
 	Loading().then(() => {
+		new WOW().init();
 		setHeightThumbnailSliderProductDetail();
 		// GET HEIGHT SOMWE ELEMENT
 		setHeightOverFolowBySomeElement();

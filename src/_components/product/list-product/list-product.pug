@@ -2,7 +2,7 @@ section.list-product
 	.container
 		// GIỚI THIỆU TRANG DANH SÁCH SẢN PHẨM - CẤP 1
 		.introduce
-			.block-title.mb-30px
+			.block-title.mb-30px.wow.fadeInLeft(data-wow-delay=".2s")
 				h3.tt-u.fw700.color-gray dụng cụ đo lường
 			.description-list-product
 				.ckeditor.desc-list-product
@@ -11,11 +11,11 @@ section.list-product
 					p Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature.
 		// DACH SÁCH SẢN PHẨM - CẤP 1
 		.list-item-products
-			.block-title.ta-c.line-center-90.mb-40px
+			.block-title.ta-c.line-center-90.mb-40px.wow.fadeInLeft(data-wow-delay=".2s")
 				h3.tt-u.fw700.color-gray sản phẩm
 			.row
 				-for(i=1;i<10;i++)
-					.item-product.col-lg-4.col-sm-6
+					.item-product.col-lg-4.col-sm-6.wow.fadeIn(data-wow-delay=".2s")
 						a(href="danh-muc-san-pham-cap-2.html")
 							figure.hover-style-1
 								.img.ov-h
