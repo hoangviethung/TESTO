@@ -10,114 +10,36 @@
 		padding: 0;
 		.box-left{
 			position: relative;
-			.image{
+			.img{
 				height: 620px;
-				img{
-					height: 100%;
-				}
 			}
-		}
-		.tech-right{
-			width: 100%;
-			padding: 50px;
-			display: flex;
-			align-items: center;
-			.content{
-				width: 100%;
-				.block-title{
-					margin-top: 50px;
-					h3{
-						&::after{
-							width: 50%;
-							content: '';
-							position: absolute;
-							left: 0;
-							bottom: 0;
-							transform : translateX(0);
-						}
-					}
-					@media(max-width: 1024.98px){
-						margin: 20px;
-						h3{
-							font-size: 20px;
-							color: #fff;
-						}
-					}
-				}
-				.tech-block{
-					max-height: 130px;
-					margin-bottom: 70px;
-					overflow: hidden;
-					figure{
-						.image{
-							width: 60px;
-							height: 60px;
-							display: flex;
-							align-items: center;
-							@media(max-width: 1025px){
-								img{
-									width: 60px;
-								}
-							}
-						}
-						figcaption{
-							margin-top: 20px;
-							h3{
-								font-size: 16px;
-								font-weight: 600;
-								color: #707070;
-							}
-							p{
-								font-size: 16px;
-								font-weight: 400;
-								color: #707070;
-							}
-							@media(max-width: 1024.98px){
-								h3{
-									font-size: 13px;
-									color: #fff;
-								}
-								p{
-									font-size: 13px;
-									color: #fff;
-								}
-							}
-							@media(max-width: 768px){
-								p{
-									display: none;
-								}
-							}
-							@media(max-width: 1025px){
-								padding: 0 20px;
-							}
-						}
-						@media(max-width: 1025px){
-							display: -webkit-inline-box;
-						}
-					}
-					@media(max-width: 1025px){
-						margin-top: 0;
-						margin-bottom: 20px;
-						padding: 20px;
-						text-align: center;
-					}
+			@media(max-width: 1438.98px){
+				.img{
+					height: 460px;
 				}
 			}
 			@media(max-width: 1024.98px){
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 620px;
-				background-color: rgba($color: #000000, $alpha: .5);
-				padding: 0;
-				.content{
-					height: 100%;
+				.img{
+					height: 335px;
+				}
+			}
+			@media(max-width: 768.98px){
+				.img{
+					height: 320px;
 				}
 			}
 		}
-	}
-	@media(max-width: 1024.98px){
-		padding-bottom: 30px;
+		.box-right{
+			width: 100%;
+			position: relative;
+			.content{
+				width: 600px;
+				margin: 0 auto;
+				overflow: hidden;
+				.tech-content{
+					max-height: 550px;
+				}
+			}
+		}
 	}
 }
