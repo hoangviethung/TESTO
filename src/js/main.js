@@ -425,4 +425,5 @@ document.addEventListener('DOMContentLoaded', () => {
 window.addEventListener("resize", () => {
 	setHeightOverFolowBySomeElement();
 	setHeightThumbnailSliderProductDetail();
+	checkLayoutBanner();
 });

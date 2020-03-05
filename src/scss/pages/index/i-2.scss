@@ -10,7 +10,6 @@
 		.desc {
 			margin-top   : 50px;
 			max-height   : 275px;
-			overflow     : hidden;
 			margin-bottom: 15px;
 		}
 	}
@@ -82,7 +81,22 @@
 
 			.desc {
 				margin-top: 10px;
-				max-height: 75px;
+			}
+		}
+	}
+
+	@media (max-width: 575.98px) {
+		.content {
+			.desc {
+				max-height: 70px;
+			}
+		}
+	}
+
+	@media (max-width: 350px) {
+		.content {
+			.desc {
+				max-height: 40px;
 			}
 		}
 	}
