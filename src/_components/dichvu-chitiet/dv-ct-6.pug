@@ -1,27 +1,35 @@
 section.c-t-6
 	.container
-		.download-public
+		.download-block
 			.block-title.color-gray.ta-l.mb-30px.tt-u
 				h3 Tải xuống phổ biến từ Testo
-				.row
-					.col-lg-6.col-md-6.col-12.p-0.box-left
-						.swiper-container.download-slide
-							.swiper-wrapper
-								-for(i=1;i<4;i++)
-									.swiper-slide
-										.img.ov-h
-											img(src="./assets/images/slide/download-slide.png", alt="")
-						.swiper-button-prev
-						.swiper-button-next
-					.col-lg-6.col-md-6.col-12.box-right
-						.content
-							.desc
-								.ckeditor.desc-applied.mb-30px
-									.block-title.color-gray.tt-u.ta-l.mb-15px
-										h3 lorem ipsum
-									.list-download
-										ul
-											-for(i=1;i<8;i++)
-												li.list-item
-													a.block-title.list-link.color-gray.fw-400(href="https://static-int.testo.com/media/3d/c1/7a0969cd8d55/DataControl.exe")
-														|Software DataControl (EXE, 188'067 KB)
+			.dowload-content
+				.box-left.col-lg-6.col-12.p-0
+					.swiper-container
+						.swiper-wrapper
+							-for(i=1; i<5; i++)
+								.swiper-slide
+									.image.ov-h(data-getheight)
+										img.ofcv.blur-up.lazyloaded(src="./assets/images/slide/download-slide.png", alt="")
+					.swiper-button-next
+					.swiper-button-prev
+				.box-right.col-lg-6.col-12.p-0
+					.content(data-setheight style="max-height: 450px;")
+						.desc
+							.ckeditor.desc-item-dow-load
+								h3 Lorem ipsum
+								ul
+									li
+										a(href="#") Software DataControl (EXE, 188'067 KB)
+									li
+										a(href="#") Software ComSoft Basic (EXE, 185'663 KB)
+									li
+										a(href="#") Instruction manual ComSoft Basic (PDF, 1.9 MB)
+									li
+										a(href="#") Driver Testo usb (EXE, 1'624 KB)
+									li
+										a(href="#") Application information Testo usb driver (PDF, 1.2 MB)
+									li
+										a(href="#") Software IRSoft (EXE, 313'947 KB)
+									li
+										a(href="#") Configuration testo 184 T3 (PDF, 272 KB)

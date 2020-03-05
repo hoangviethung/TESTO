@@ -1,28 +1,30 @@
 .nb-2{
 	position: relative;
     width: 100%;
-	float: left;
+	margin-left: auto;
 	padding-bottom: 50px;
 	overflow: hidden;
 	.tech-sec{
 		width: 100%;
 		background-color: #DAE4EA;
 		padding: 0;
-		.img{
-			height: 100%;
-			img{
-				height: 100%;
+		.box-left{
+			position: relative;
+			.image{
+				height: 620px;
+				img{
+					height: 100%;
+				}
 			}
 		}
 		.tech-right{
 			width: 100%;
-			padding: 30px;
+			padding: 50px;
 			display: flex;
 			align-items: center;
 			.content{
 				width: 100%;
-				max-height: 650px;
-				.line{
+				.block-title{
 					margin-top: 50px;
 					h3{
 						&::after{
@@ -38,21 +40,29 @@
 						margin: 20px;
 						h3{
 							font-size: 20px;
+							color: #fff;
 						}
 					}
 				}
 				.tech-block{
-					width: 355px;
-					float: left;
+					max-height: 130px;
+					margin-bottom: 70px;
+					overflow: hidden;
 					figure{
+						.image{
+							width: 60px;
+							height: 60px;
+							display: flex;
+							align-items: center;
 							@media(max-width: 1025px){
 								img{
 									width: 60px;
 								}
 							}
+						}
 						figcaption{
-							padding: 30px 0;
-							h2{
+							margin-top: 20px;
+							h3{
 								font-size: 16px;
 								font-weight: 600;
 								color: #707070;
@@ -62,12 +72,19 @@
 								font-weight: 400;
 								color: #707070;
 							}
-							@media(max-width: 1025px){
-								h2{
+							@media(max-width: 1024.98px){
+								h3{
 									font-size: 13px;
+									color: #fff;
 								}
 								p{
 									font-size: 13px;
+									color: #fff;
+								}
+							}
+							@media(max-width: 768px){
+								p{
+									display: none;
 								}
 							}
 							@media(max-width: 1025px){
@@ -80,7 +97,9 @@
 					}
 					@media(max-width: 1025px){
 						margin-top: 0;
+						margin-bottom: 20px;
 						padding: 20px;
+						text-align: center;
 					}
 				}
 			}
@@ -88,8 +107,10 @@
 				position: absolute;
 				top: 0;
 				left: 0;
-				height: 100%;
+				width: 100%;
+				height: 620px;
 				background-color: rgba($color: #000000, $alpha: .5);
+				padding: 0;
 				.content{
 					height: 100%;
 				}

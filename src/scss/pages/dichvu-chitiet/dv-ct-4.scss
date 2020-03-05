@@ -5,6 +5,17 @@
 		.image-content{
 			.content{
 				max-width: 625px;
+				max-height: 350px;
+				overflow: hidden;
+				.desc{
+					margin-top: 30px;
+    				margin-bottom: 15px;
+					max-height: 350px;
+					overflow: hidden;
+					@media(max-width: 1024.98px){
+						margin-top: 0;
+					}
+				}
 			}
 			.image{
 				height: 350px;

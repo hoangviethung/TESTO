@@ -797,19 +797,14 @@
 			}
 		}
 	}
-	&.desc-item-footer-block-1{
+	&.desc-item-dow-load{
 		h3 {
 			font-size     : 21px;
 			font-weight   : 700;
 			text-transform: uppercase;
 			color         : #707070;
 		}
-		p {
-			color: #707070;
-			margin-bottom: 15px;
-			font-weight : 400;
-			font-size: 16px;
-		}
+		
 
 		ul {
 			list-style  : none;
@@ -819,15 +814,29 @@
 			li {
 				position     : relative;
 				padding-left : 25px;
-				margin-bottom: 5px;
-
+				margin-bottom: 30px;
+				a {
+					color: #707070;
+					font-weight : 400;
+					font-size: 16px;
+					position: relative;
+					&::after{
+						content: '';
+						position: absolute;
+						top: 0;
+						left: -25px;
+						width: 15px;
+						height: 18px;
+						background-image: url(..\assets\icons\download.svg);
+					}
+				}
 				&:after {
-					content          : '';
+					content: '';
 					position         : absolute;
 					left             : 0;
-					top              : 7px;
-					width            : 12px;
-					height           : 11px;
+					bottom              : -10px;
+					width            : 100%;
+					border-top: solid 1px #707070;
 				}
 			}
 		}
