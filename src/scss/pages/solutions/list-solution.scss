@@ -36,8 +36,12 @@
 
 	.list-item-solution {
 		margin-top: 50px;
-		padding   : 50px 138px;
+		padding   : 50px 0;
 		background: #DAE4EA;
+
+		.row {
+			padding: 0 138px;
+		}
 	}
 
 	.description {
@@ -46,7 +50,7 @@
 		overflow  : hidden;
 	}
 
-	@media (max-width: 1440px) {
+	@media (max-width: 1439.98px) {
 
 		.introduce {
 			padding: 0;
@@ -54,6 +58,10 @@
 
 		.list-item-solution {
 			padding: 40px 0;
+
+			.row {
+				padding: 0;
+			}
 		}
 
 		.introduce {

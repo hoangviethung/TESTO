@@ -1,6 +1,7 @@
 import Cookie from "./lib/Cookie";
 import Loading from "./lib/Loading";
 import Tab from "./lib/Tab";
+import getSVG from "./lib/GetSVG"
 
 // SLIDER HERE !!!
 const homeSlider = () => {
@@ -71,7 +72,7 @@ const homeProductSlider = () => {
 			1100: {
 				slidesPerView: 3,
 			},
-			768: {
+			575: {
 				slidesPerView: 2,
 			}
 		},
@@ -202,13 +203,41 @@ const toggleMenuMobile = () => {
 		$(this).siblings('.main-nav').toggleClass('active');
 		$('body').toggleClass('disabled')
 		$('#overlay').toggleClass('active');
+		$('.sub-menu').removeClass('active');
 	});
 
 	$('#overlay').on('click', function() {
 		$(this).removeClass('active');
 		$('body').removeClass('disabled')
 		$('.main-nav').removeClass('active');
+		$('.sub-menu').removeClass('active');
 		$('.toggle-menu.mobile').removeClass('active');
+	})
+}
+
+const menuMutipLevel = () => {
+	// THÊM CLASS HASSUB MENU
+	$('.sub-menu').parent('.nav-item').addClass('has-sub');
+	// LEVEL 1
+	const lv1 = $('.main-nav .nav-list').children('.nav-item');
+	lv1.addClass('level-1');
+	// LEVEL 2
+	const lv2 = $('.nav-item.has-sub.level-1').children('.sub-menu').children('.nav-item');
+	lv2.addClass('level-2');
+	// LEVEL 3
+	const lv3 = $('.nav-item.has-sub.level-2').children('.sub-menu').children('.nav-item');
+	lv3.addClass('level-3');
+}
+
+const menuMutipLevelMobile = () => {
+	$('.has-sub').on('click', function(e) {
+		e.stopPropagation();
+		$(e.currentTarget).children('.sub-menu').addClass('active');
+	});
+
+	$('.back').on('click', function(e) {
+		e.stopPropagation();
+		$(e.currentTarget).closest('.sub-menu').removeClass('active');
 	})
 }
 
@@ -271,7 +300,7 @@ function aboutMember() {
 		breakpoints: {
 			768: {
 				slidesPerView: 3,
-				spaceBetween: 20,
+				spaceBetween: 10,
 			},
 			375: {
 				slidesPerView: 1,
@@ -283,11 +312,6 @@ function aboutMember() {
 
 function newBanner() {
 	var swiper = new Swiper('.new-slide, .hr, .download-slide', {
-		pagination: {
-			el: '.swiper-pagination',
-			type: 'fraction',
-		},
-		centeredSlides: true,
 		speed: 1000,
 		loop: true,
 		spaceBetween: 0,
@@ -364,8 +388,10 @@ function showBackToTop() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+	getSVG();
 	Loading().then(() => {
 		setHeightThumbnailSliderProductDetail();
+		// GET HEIGHT SOMWE ELEMENT
 		setHeightOverFolowBySomeElement();
 	});
 	// SLIDER HERE !!!
@@ -377,6 +403,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	setHeightThumbnailSliderProductDetail();
 	// HEADER HERE !!!
 	activeHeaderWhenScroll();
+	menuMutipLevel();
+	menuMutipLevelMobile();
 	// CHECK BANNER IN LAYOUT
 	checkLayoutBanner();
 	toggleMenuMobile();
@@ -386,8 +414,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	tabProductDetailMobile();
 	// TAB
 	const tabInformationDetail = new Tab('.block-tab-information-detail');
-	// GET HEIGHT SOMWE ELEMENT
-
 	// HOÀNG JS
 	aboutMember();
 	newBanner();

@@ -114,10 +114,16 @@ body {
 	&-1 {
 		-webkit-line-clamp: 1;
 	}
-	&-2{
+
+	&-2 {
 		-webkit-line-clamp: 2;
 	}
-	&-5{
+
+	&-3 {
+		-webkit-line-clamp: 3;
+	}
+
+	&-5 {
 		-webkit-line-clamp: 5;
 	}
 }
@@ -426,7 +432,7 @@ body {
 	.content {
 		max-width : 670px;
 		margin    : 0 auto;
-		overflow-y: hidden;
+		overflow-y: auto;
 	}
 
 	.image {

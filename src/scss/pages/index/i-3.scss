@@ -2,6 +2,8 @@
 	margin-top: 50px;
 
 	.list-applied {
+		padding: 0 275px;
+
 		.title-list-applied {
 			order: 2;
 
@@ -59,6 +61,12 @@
 					}
 				}
 			}
+		}
+	}
+
+	@media (max-width: 1439.98px) {
+		.list-applied {
+			padding: 0;
 		}
 	}
 
