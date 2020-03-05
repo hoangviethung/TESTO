@@ -8,7 +8,7 @@
 		margin-left : -30px;
 	}
 
-	.col-md-6 {
+	.col-ms-6 {
 		padding-right: 30px;
 		padding-left : 30px;
 	}
@@ -34,7 +34,7 @@
 			margin-left : -10px;
 		}
 
-		.col-md-6 {
+		.col-sm-6 {
 			padding-right: 10px;
 			padding-left : 10px;
 		}
@@ -55,6 +55,12 @@
 			height: 250px;
 		}
 
+		.description {
+			height: 200px;
+		}
+	}
+
+	@media (max-width: 575.98px) {
 		.description {
 			margin-top: 15px;
 			height    : auto;
