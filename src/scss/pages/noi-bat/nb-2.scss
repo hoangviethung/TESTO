@@ -32,12 +32,54 @@
 		.box-right{
 			width: 100%;
 			position: relative;
+			overflow: auto;
 			.content{
-				width: 600px;
-				margin: 0 auto;
-				overflow: hidden;
+				height: 100%;
+				margin: 0 70px;
+				padding-top: 50px;
+				@media(max-width: 768.98px){
+					margin: 20px;
+					padding: 0;
+				}
+				@media(max-width: 1438.98px){
+					margin: 20px;
+					padding: 0;
+				}
+				.block-title{
+					h3{
+						font-size: 16px;
+					}
+				}
 				.tech-content{
-					max-height: 550px;
+					height: 345px;
+					overflow: hidden;
+					display: flex;
+					align-items: center;
+					figure{
+						height: 135px;
+						overflow: hidden;
+						.image{
+							width: 60px;
+							height: 60px;
+						}
+						figcaption{
+							h3{
+								color: #707070;
+								font-size: 16px;
+								font-weight: 600;
+							}
+							p{
+								color: #707070;
+								font-size: 16px;
+							}
+							@media(max-width: 1438.98px){
+								h3,
+								p{
+									font-size: 14px;
+								}
+							}
+						}
+					}
 				}
 			}
 		}

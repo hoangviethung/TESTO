@@ -5,15 +5,15 @@
     margin-top: 50px;
     padding-bottom: 50px;
     .image-content {
-        padding: 0;
+		padding: 0;
+		.content{
+			max-height: 390px;
+			overflow: hidden;
+		}
         @media(max-width: 1024.98px) {
             .content {
-                display: flex;
-                align-items: center;
-                margin: auto;
-                max-width: 690px;
-                height: auto;
-                position: static;
+				max-width: 690px;
+				margin-top: 20px;
             }
         }
     }
