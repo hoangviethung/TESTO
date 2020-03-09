@@ -2,11 +2,12 @@
 	position: relative;
 	width: 100%;
 	margin-left: auto;
-	padding-bottom: 50px;
-	margin-top: 80px;
+	margin-bottom: 50px;
+	margin-top: 50px;
 	.new-promotion {
 		margin: 0 138px;
 		.new-block{
+			cursor: pointer;
 			position: relative;
 		}
 		.line{

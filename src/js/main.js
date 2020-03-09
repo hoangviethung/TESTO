@@ -214,7 +214,23 @@ const toggleMenuMobile = () => {
 		$('.toggle-menu.mobile').removeClass('active');
 	})
 }
-
+// Form search
+function search_form() {
+    $('header').each(function() {
+        $('.search', this).on('click', function(e) {
+            e.preventDefault();
+            $('.search-form').slideDown();
+        });
+        $('.close').on('click', function() {
+            $('.search-form').slideUp();
+        });
+    });
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 0) {
+            $('.search-form').slideUp();
+        }
+    });
+}
 const menuMutipLevel = () => {
 	// THÊM CLASS HASSUB MENU
 	$('.sub-menu').parent('.nav-item').addClass('has-sub');
@@ -425,6 +441,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	ajaxForm();
 	responText();
 	showBackToTop();
+	search_form();
 });
 
 window.addEventListener("resize", () => {

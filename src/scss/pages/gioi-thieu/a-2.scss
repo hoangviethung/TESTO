@@ -2,7 +2,7 @@
 	position: relative;
 	width: 100%;
 	margin-left: auto;
-	padding-bottom: 50px;
+	margin-bottom: 50px;
 	.member-block {
 		max-width: 815px;
 		.line {
@@ -14,6 +14,7 @@
 		}
 		.member-content {
 			position: relative;
+			cursor: pointer;
 			.swiper-button-prev {
 				width: 70px;
 				height: 70px;
