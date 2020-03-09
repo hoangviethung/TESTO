@@ -289,7 +289,7 @@ const setHeightOverFolowBySomeElement = () => {
 function aboutMember() {
 	var swiper = new Swiper('.member-slide', {
 		centeredSlides: true,
-		slidesPerView: 3,
+		slidesPerView: 4,
 		speed: 1000,
 		loop: true,
 		autoplay: true,
@@ -298,9 +298,13 @@ function aboutMember() {
 			prevEl: '.swiper-button-prev',
 		},
 		breakpoints: {
-			768: {
+			767: {
 				slidesPerView: 3,
 				spaceBetween: 10,
+			},
+			576:{
+				slidesPerView: 3,
+				spaceBetween:10,
 			},
 			375: {
 				slidesPerView: 1,
@@ -311,7 +315,7 @@ function aboutMember() {
 }
 
 function newBanner() {
-	var swiper = new Swiper('.new-slide, .hr, .download-slide', {
+	var swiper = new Swiper('.new-slide, .hr, .download-softwaer', {
 		speed: 1000,
 		loop: true,
 		spaceBetween: 0,
