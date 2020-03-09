@@ -1,23 +1,23 @@
-.a-1{
-	position: relative;
+.a-1 {
+    position: relative;
     width: 100%;
-	float: left;
-	margin-top: 50px;
-	padding-bottom: 50px;
-	.image-content{
+    margin-left: auto;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    .image-content {
 		padding: 0;
-		@media(max-width: 1024.98px){
-			.content{
-			    display: flex;
-				align-items: center;
-				margin: auto;
-				max-width: 690px;
-				height: auto;
-				position: static;
-			}
+		.content{
+			max-height: 390px;
+			overflow: hidden;
 		}
-	}
-	@media(max-width: 1024.98px){
-		padding-bottom: 30px;
-	}
+        @media(max-width: 1024.98px) {
+            .content {
+				max-width: 690px;
+				margin-top: 20px;
+            }
+        }
+    }
+    @media(max-width: 1024.98px) {
+        padding-bottom: 30px;
+    }
 }

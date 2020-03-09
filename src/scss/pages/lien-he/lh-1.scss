@@ -1,14 +1,14 @@
 .lh-1{
 	position: relative;
     width: 100%;
-	float: left;
+	margin-left: auto;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	.contact-section{
 		.contact-form{
 			width: 100%;
 			background-color: #DAE4EA;
-			padding: 50px;
+			padding: 55px 75px 55px 75px;
 			.form-title{
 				position: relative;
 				text-align: center;
@@ -49,21 +49,23 @@
 				textarea.form-control{
 					height: 145px;
 				}
-				button.btn-form{
-					text-decoration: none;
-					background: none;
-					color: #545454;
-					font-size: 20px;
-					font-weight: 700;
-					position: absolute;
-					bottom: -15%;
-					left: 50%;
-					transform: translate(-50%, -50%);
-					border-bottom: solid 3px #FF9E0C;
-					border-top: none;
-					border-left: none;
-					border-right: none;
+				.button{
+					width: 100%;
+					text-align: center;
+					button.btn-form{
+						text-decoration: none;
+						background: none;
+						color: #545454;
+						font-size: 20px;
+						font-weight: 700;
+						margin-top: 15px;
+						border-bottom: solid 3px #FF9E0C;
+						border-top: none;
+						border-left: none;
+						border-right: none;
+					}
 				}
+		
 				@media(max-width: 1025px){
 					.form-control{
 						height: 40px;
@@ -85,11 +87,10 @@
 			background-image: url(..\assets\icons\map-contact.svg);
 			background-size: 100% 100%;
 			margin-left: auto;
+			display: flex;
+			align-items: flex-end;
 			.desc{
 				padding-left: 30px;
-				position: absolute;
-				left: 10%;
-				bottom: 0;
 				max-width: 418px;
 				h2{
 					font-size: 28px;
@@ -114,9 +115,6 @@
 					}
 				}
 				@media(max-width: 1025px){
-					padding: 20px;					
-					bottom: -5%;
-					left: 0;
 					h2{
 						font-size: 25px;
 						margin-bottom: 10px;
