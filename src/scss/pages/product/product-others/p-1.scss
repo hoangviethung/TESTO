@@ -1,8 +1,10 @@
 .product-others {
-	margin-top   : 50px;
-	padding      : 50px 0;
-	background   : #DAE4EA;
-	margin-bottom: 25px;
+	position  : relative;
+	z-index   : 2;
+	margin-top: 50px;
+	padding   : 50px 0;
+	background: #DAE4EA;
+	box-shadow: 0px 3px 6px rgba($color: #000000, $alpha: .16);
 
 	.slider-product-others {
 		position: relative;

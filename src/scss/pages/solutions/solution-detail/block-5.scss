@@ -10,6 +10,25 @@
 			.img {
 				height: 165px;
 			}
+
+			figcaption {
+				position: relative;
+
+				h5 {
+					line-height: 32px;
+				}
+
+				&:after {
+					content         : '';
+					position        : absolute;
+					right           : 10px;
+					top             : 50%;
+					width           : 18px;
+					height          : 15px;
+					transform       : translateY(-50%);
+					background-image: url(../assets/icons/download-white.svg);
+				}
+			}
 		}
 	}
 
@@ -29,7 +48,5 @@
 		}
 	}
 
-	@media (max-width: 767.98px) {
-		
-	}
+	@media (max-width: 767.98px) {}
 }

@@ -20,6 +20,7 @@
 			justify-content: center;
 			padding-left   : 15px;
 			padding-right  : 15px;
+			transition     : .3s all ease-in-out;
 
 			figure {
 				img {
@@ -31,6 +32,12 @@
 
 				figcaption {
 					margin-top: 20px;
+				}
+			}
+
+			@media (min-width: 1025px) {
+				&:hover {
+					transform: scale(1.1);
 				}
 			}
 		}

@@ -1,10 +1,16 @@
 .category-product-level-2 {
-	margin-top   : 80px;
-	margin-bottom: 25px;
+	position  : relative;
+	z-index   : 2;
+	margin-top: 80px;
 	// IMPORT HERE !!!
 	@import 'block-1';
 	@import 'block-2';
 	@import 'block-3';
+
+	.block-4 {
+		background: #ffffff;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+	}
 
 	@media (max-width: 1024.98px) {
 		margin-top: 25px;
