@@ -5,6 +5,10 @@
 		padding         : 12px;
 		margin-bottom   : 20px;
 		line-height     : 24px;
+		.filter-down{
+			float: right;
+			cursor: pointer;
+		}
 	}
 
 	.filter-option {
@@ -12,6 +16,10 @@
 
 		&:last-child {
 			margin-bottom: 0;
+		}
+		.filter-down{
+			float: right;
+			cursor: pointer;	
 		}
 	}
 

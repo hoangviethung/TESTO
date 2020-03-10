@@ -234,10 +234,10 @@ header {
 		.close {
 			position: absolute;
 			right: 0;
-			top: 0;
-			transform: translate(-50%, 30%);
-			width: 32px;
-			height: 32px;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			width: 25px;
+			height: 25px;
 			opacity: 0.3;
 			cursor: pointer;
 
@@ -252,7 +252,7 @@ header {
 				position: absolute;
 				left: 15px;
 				content: ' ';
-				height: 33px;
+				height: 25px;
 				width: 2px;
 				background-color: #333;
 			}
@@ -264,6 +264,9 @@ header {
 			&:after {
 				transform: rotate(-45deg);
 			}
+		}
+		@media(max-width: 1024.98px){
+			right: -25%;
 		}
 	}
 	.language {
