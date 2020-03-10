@@ -216,19 +216,16 @@ const toggleMenuMobile = () => {
 }
 // Form search
 function search_form() {
-    $('header').each(function() {
-        $('.search', this).on('click', function() {
-            $('.search-form').toggle('slow');
-		});
-        $('.close').on('click', function() {
-            $('.search-form').slideUp();
-        });
-    });
+	$('header').each(function() {
+		$('.search').click(function(){
+			$('.search-form').toggle(1000);
+		})
+	})
     $(window).scroll(function() {
         if ($(this).scrollTop() > 0) {
             $('.search-form').slideUp();
         }
-    });
+	});
 }
 const menuMutipLevel = () => {
 	// THÊM CLASS HASSUB MENU
