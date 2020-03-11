@@ -269,21 +269,16 @@ const checkLayoutBanner = () => {
 
 const filterMobile = () => {
 	if (window.innerWidth < 1025) {
-		$('.mobile-filter-open,.filter-down').on('click', function() {
-			// if(e=1){
-			// 	$(this).find('.filter-down').addClass('active-filter');
-			// }else{
-			// 	$(this).find('.filter-down').removeClass('active-filter');
-			// 	$(this).find('.filter-down').addClass('remove-active');
-			// }
+		$('.mobile-filter-open').on('click', function() {
+			$(this).find('.filter-down').toggleClass('active-filter');
 			$(this).siblings('.filter-option-parent').find('.filter-option-container').slideToggle();
 			$(this).siblings('.filter-option-parent').find('.filter-option-container .filter-option .filter-entries').slideUp();
 		});
-		
-		$('.option-title,.filter-down').on('click', function() {
-			$(this).siblings('.filter-entries').slideToggle();
-			$('.option-title.filter-down').not(this).siblings('.filter-entries').slideUp();
-		});
+		$('.filter-option').on('click', function(){
+			$(this).find('.filter-down').toggleClass('active-filter');
+			$(this).find('.option-title').siblings('.filter-entries').slideToggle();
+			$('.filter-option').not(this).siblings('.filter-entries').slideUp();
+			});
 	}
 }
 
