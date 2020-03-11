@@ -274,6 +274,7 @@ const filterMobile = () => {
 			// 	$(this).find('.filter-down').addClass('active-filter');
 			// }else{
 			// 	$(this).find('.filter-down').removeClass('active-filter');
+			// 	$(this).find('.filter-down').addClass('remove-active');
 			// }
 			$(this).siblings('.filter-option-parent').find('.filter-option-container').slideToggle();
 			$(this).siblings('.filter-option-parent').find('.filter-option-container .filter-option .filter-entries').slideUp();
