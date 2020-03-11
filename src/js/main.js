@@ -274,8 +274,13 @@ const filterMobile = () => {
 			$(this).siblings('.filter-option-parent').find('.filter-option-container').slideToggle();
 			$(this).siblings('.filter-option-parent').find('.filter-option-container .filter-option .filter-entries').slideUp();
 		});
+		$('.mobile-filter-open').on('click', function(){
+			$('.option-title').not(this).find('.filter-down').removeClass('active-filter');
+		});
 		$('.option-title').on('click', function(){
 			$(this).siblings('.filter-entries').slideToggle();
+			$(this).find('.filter-down').toggleClass('active-filter');
+			$('.option-title').not(this).find('.filter-down').removeClass('active-filter');
 			$('.option-title').not(this).siblings('.filter-entries').slideUp();
 		});
 	}
