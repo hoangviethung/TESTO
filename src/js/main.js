@@ -218,7 +218,7 @@ const toggleMenuMobile = () => {
 function search_form() {
 	$('header').each(function() {
 		$('.search').click(function(){
-			$('.search-form').toggle(1000);
+			$('.search-form').slideToggle(500);
 		})
 	})
     $(window).scroll(function() {
