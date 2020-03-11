@@ -24,16 +24,6 @@
 		&:last-child {
 			margin-bottom: 0;
 		}
-		.filter-down{
-			float: right;
-			cursor: pointer;
-			width: 15px;
-			transition: .3s all ease;
-			display: none;
-			@media(max-width: 1024.98px){
-				display: block;
-			}
-		}
 	}
 
 	.option-title {
@@ -47,6 +37,16 @@
 		@media (min-width: 1025px) {
 			&:hover {
 				color: map-get($mau, main);
+			}
+		}
+		.filter-down{
+			float: right;
+			cursor: pointer;
+			width: 15px;
+			transition: .3s all ease;
+			display: none;
+			@media(max-width: 1024.98px){
+				display: block;
 			}
 		}
 	}

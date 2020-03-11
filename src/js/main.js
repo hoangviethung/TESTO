@@ -274,11 +274,11 @@ const filterMobile = () => {
 			$(this).siblings('.filter-option-parent').find('.filter-option-container').slideToggle();
 			$(this).siblings('.filter-option-parent').find('.filter-option-container .filter-option .filter-entries').slideUp();
 		});
-		$('.filter-option').on('click', function(){
+		$('.option-title').on('click', function(){
 			$(this).find('.filter-down').toggleClass('active-filter');
-			$(this).find('.option-title').siblings('.filter-entries').slideToggle();
-			$('.filter-option').not(this).siblings('.filter-entries').slideUp();
-			});
+			$(this).siblings('.filter-entries').slideToggle();
+			$('.option-title').not(this).siblings('.filter-entries').slideUp();
+		});
 	}
 }
 
