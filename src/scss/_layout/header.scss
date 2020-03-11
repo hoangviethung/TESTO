@@ -331,6 +331,9 @@ header {
 					&.level-1 {
 						>.sub-menu {
 							top: 47px;
+							@media(max-width: 1024.98px){
+								top: 60px;
+							}
 						}
 					}
 
@@ -396,6 +399,7 @@ header {
 
 						&.level-1 {
 							>.sub-menu {
+								overflow-y: auto;
 								left: -100%;
 
 								&.active {
