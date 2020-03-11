@@ -275,7 +275,6 @@ const filterMobile = () => {
 			$(this).siblings('.filter-option-parent').find('.filter-option-container .filter-option .filter-entries').slideUp();
 		});
 		$('.option-title').on('click', function(){
-			$(this).find('.filter-down').toggleClass('active-filter');
 			$(this).siblings('.filter-entries').slideToggle();
 			$('.option-title').not(this).siblings('.filter-entries').slideUp();
 		});
