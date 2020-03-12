@@ -5,7 +5,6 @@
 	.new-detail-block{
 		margin: 0 138px;
 		.new-content{
-			padding: 0;
 			.content{
 				overflow: hidden;
 				.block-title{
@@ -16,7 +15,6 @@
 						}
 					}
 				}
-				padding: 0 20px;
 				.img{
 					width: 100%;
 					max-height: 550px;
@@ -26,6 +24,7 @@
 					p {
 						color: #707070;
 						font-weight: 300;
+						text-align: justify;
 					}
 					ul {
 						list-style: none;
@@ -43,9 +42,6 @@
 					}
 				}
 			}
-			@media(max-width: 768px){
-				padding-right: 0;
-			}
 		}
 		.aside-new{
 			.content{
@@ -61,15 +57,30 @@
 				a{
 					figure{
 						margin-bottom: 20px;
+						overflow: hidden;
 						.img{
 							max-width: 100%;
-							figcaption{
-								overflow: hidden;
-								p{
-									font-size: 16px;
-									color: #545454;
-									font-weight: 500;
+							img{
+								-webkit-transform: scale(1);
+								transform: scale(1);
+								-webkit-transition: .5s ease-in-out;
+								transition: .5s ease-in-out;
+								&:hover{
+									-webkit-transform: scale(1.1);
+									transform: scale(1.1);
 								}
+								@media (max-width: 1025px) {
+									pointer-events: none;
+								}
+							}
+						}
+						figcaption{
+							overflow: hidden;
+							max-height: 50px;
+							p{
+								font-size: 16px;
+								color: #545454;
+								font-weight: 500;
 							}
 						}
 					}
