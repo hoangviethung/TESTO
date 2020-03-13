@@ -1,17 +1,20 @@
 .a-4 {
-	position: relative; 
-    width: 100%;
-    margin-left: auto;
-    margin-bottom: 55px;
+	position: relative;
+	width: 100%;
+	margin-left: auto;
+	margin-bottom: 55px;
+
 	.job-content {
 		margin: 0 138px;
-		.line{
-			h3{
-				&::after{
+
+		.line {
+			h3 {
+				&::after {
 					width: 50%;
 				}
 			}
 		}
+
 		.title-sec {
 			text-align: center;
 
@@ -24,29 +27,27 @@
 
 		.left-box {
 			width: 100%;
+
 			.img-video {
-				position: relative;
-				width: 100%;
-				height: 450px;
-				img{
+				.isVideo {
+					position: relative;
 					width: 100%;
-					height: 100%;
-					object-fit: cover;
-				}
-				.icon-play{
-					position: absolute;
-					top: 50%;
-					left: 50%;
-					transform: translate(-50%, -50%);
-					width: 70px;
-					height: 50px;
-					cursor: pointer;
-				}
-				@media(max-width: 768px){
-					height: 350px;
-				}
-				@media(max-width: 1438.98px){
-					height: 350px;
+					height: 450px;
+
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+
+
+					@media(max-width: 768px) {
+						height: 350px;
+					}
+
+					@media(max-width: 1438.98px) {
+						height: 350px;
+					}
 				}
 			}
 		}
@@ -54,6 +55,7 @@
 		.right-box {
 			width: 100%;
 			padding-left: 30px;
+
 			.content {
 				position: relative;
 				width: 632px;
@@ -95,18 +97,22 @@
 						font-weight: 400;
 					}
 				}
-				a{
+
+				a {
 					text-decoration: none;
+
 					.btn-new {
 						margin-top: 20px;
 					}
 				}
 			}
-			@media(max-width: 1025px){
+
+			@media(max-width: 1025px) {
 				padding: 20px 20px;
 			}
 		}
-		@media(max-width: 1438.98px){
+
+		@media(max-width: 1438.98px) {
 			margin: 0;
 		}
 	}
