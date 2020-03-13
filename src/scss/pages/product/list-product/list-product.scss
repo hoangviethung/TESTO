@@ -9,7 +9,7 @@
 
 	.list-item-products {
 		margin-top: 50px;
-		position: relative;
+		position  : relative;
 
 		.row {
 			margin-left : -30px;
@@ -23,34 +23,8 @@
 		margin-bottom: 45px;
 
 		figure {
-			.img {
-				height: 290px;
-			}
-
 			figcaption {
 				margin: 15px 0;
-
-				h5 {
-					font-size : 16px;
-					transition: .3s all ease-in-out;
-				}
-
-				h5,
-				p {
-					color: #707070;
-				}
-			}
-		}
-
-		@media (min-width: 1025px) {
-			&:hover {
-				figure {
-					figcaption {
-						h5 {
-							color: map-get($mau, main);
-						}
-					}
-				}
 			}
 		}
 	}
@@ -99,14 +73,6 @@
 
 		.item-product {
 			margin-bottom: 25px;
-
-			figure {
-				figcaption {
-					p {
-						font-size: 14px;
-					}
-				}
-			}
 		}
 	}
 }
