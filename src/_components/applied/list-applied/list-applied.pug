@@ -5,23 +5,22 @@ section.list-applied
 			img.ofcv(src="./assets/images/applied/banner.png", alt="")
 		// DANH SÁCH ỨNG DỤNG
 		.list-item-applied
-			.row
+			.row.list-item
 				-for(i=1;i<5;i++)
-					.item-applied.col-md-6.wow.fadeIn(data-wow-delay=".2s")
-						.block-item-general
-							.item-product
-								a(href="danh-muc-ung-dung-cap-2.html")
-									figure.hover-style-1
-										.img.ov-h
-											img.ofcv.lazyload.blur-up(data-src="./assets/images/applied/"+i+".png", alt="")
-										figcaption
-											h5.lcl.lcl-1.fw-700.tt-u.ta-c Lorem Ipsum is simply
-							.description
-								.ckeditor.desc-item-applied
-									ul
-										li
-											p Lorem Ipsum is simply dummy text of the
-										li
-											p Printing and typesetting industry.
-										li
-											p Lorem Ipsum has been the industry's standard
+					.block-item-general.item-applied.col-md-6.wow.fadeIn(data-wow-delay=".2s")
+						.item-product
+							a(href="danh-muc-ung-dung-cap-2.html")
+								figure.hover-style-1
+									.img.ov-h
+										img.ofcv.lazyload.blur-up(data-src="./assets/images/applied/"+i+".png", alt="")
+									figcaption
+										h5.lcl.lcl-1.fw-700.tt-u.ta-c Lorem Ipsum is simply
+						.description
+							.ckeditor.desc-item-applied
+								ul
+									li
+										p Lorem Ipsum is simply dummy text of the
+									li
+										p Printing and typesetting industry.
+									li
+										p Lorem Ipsum has been the industry's standard

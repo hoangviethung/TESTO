@@ -9,22 +9,21 @@
 				p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
 		// DANH SÁCH SẢN PHẨM DANH MỤC
 		.list-category-applied-level-3
-			.row
+			.row.list-item
 				-for(i=5;i<11;i++)
-					.item-category-applied-level-3.col-lg-4.col-md-6.wow.fadeIn(data-wow-delay=".4s")
-						.block-item-general
-							.item-product
-								a(href="san-pham-chi-tiet.html")
-									figure.hover-style-1
-										.img.ov-h
-											img.ofcv.lazyload.blur-up(data-src="./assets/images/applied/"+i+".png", alt="")
-										figcaption
-											h5.lcl.lcl-1.fw-700.tt-u.ta-c Lorem Ipsum is simply
-							.desc-applied-level-3
-								.ckeditor.desc-item-category-applied-level-3-block-1
-									p Flue gas and emission measurement on heating systems and other small combustion plants.
-									ul
-										li
-											p The atmosphere should be contaminated as little as possible by pollutants.
-										li
-											p Energy should be used as efficiently as possible.
+					.block-item-general.item-category-applied-level-3.col-lg-4.col-md-6.wow.fadeIn(data-wow-delay=".4s")
+						.item-product
+							a(href="san-pham-chi-tiet.html")
+								figure.hover-style-1
+									.img.ov-h
+										img.ofcv.lazyload.blur-up(data-src="./assets/images/applied/"+i+".png", alt="")
+									figcaption
+										h5.lcl.lcl-1.fw-700.tt-u.ta-c Lorem Ipsum is simply
+						.desc-applied-level-3
+							.ckeditor.desc-item-category-applied-level-3-block-1
+								p Flue gas and emission measurement on heating systems and other small combustion plants.
+								ul
+									li
+										p The atmosphere should be contaminated as little as possible by pollutants.
+									li
+										p Energy should be used as efficiently as possible.
