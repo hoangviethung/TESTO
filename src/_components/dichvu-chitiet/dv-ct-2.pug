@@ -3,21 +3,23 @@ section.c-t-2
 		.list-item.wow.fadeInLeft(data-wow-delay=".2s")
 			.block-title.color-gray.ta-l.mb-15px.tt-u
 				h3 kiến thức cơ bản
-			.row.list-item
+			.row
 				-for(i=1;i<3;i++)
-					.col-lg-4.col-md-6.col-12.item.block-item-general
+					.col-lg-4.col-md-6.col-12.item
+						.block-item-general
+							.item-product
+								a(href="san-pham-chi-tiet.html")
+									figure.hover-style-1
+										.img.ov-h
+											img.ofcv.blur-up.lazyload(data-src="./assets/images/banner/sk-"+i+".png", alt="")
+											figcaption
+												h5.lcl.lcl-1.fw-700.tt-u.ta-c Lorem ipsum dolor
+				.col-lg-4.col-md-6.col-12.item
+					.block-item-general
 						.item-product
-							a(href="san-pham-chi-tiet.html")
-								figure.hover-style-1
+							a(data-fancybox href="https://youtu.be/3dCMcbeh30o")
+								figure.isVideo
 									.img.ov-h
-										img.ofcv.blur-up.lazyload(data-src="./assets/images/banner/sk-"+i+".png", alt="")
+										img(src="./assets/images/banner/sk-"+i+".png", alt="")
 										figcaption
 											h5.lcl.lcl-1.fw-700.tt-u.ta-c Lorem ipsum dolor
-				.col-lg-4.col-md-6.col-12.item.block-item-general
-					.item-product
-						a(data-fancybox href="https://youtu.be/3dCMcbeh30o")
-							figure.isVideo
-								.img.ov-h
-									img(src="./assets/images/banner/sk-"+i+".png", alt="")
-									figcaption
-										h5.lcl.lcl-1.fw-700.tt-u.ta-c Lorem ipsum dolor

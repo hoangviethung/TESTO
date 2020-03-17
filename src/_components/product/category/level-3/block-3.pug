@@ -3,16 +3,17 @@
 		.block-title.wow.fadeInLeft(data-wow-delay=".2s")
 			h3.color-gray.tt-u.fw-700 Bạn muốn đo ở đâu? Nhiệt kế hồng ngoại cho bất kỳ
 		.block-item
-			.row.list-item
+			.row
 				-for(i=4;i<7;i++)
-					.block-item-general.item-category-product-level-3-block-3.col-lg-4.col-sm-6.wow.fadeIn(data-wow-delay=".4s")
-						.item-product
-							a(href="danh-muc-san-pham-cap-4.html")
-								figure.hover-style-1
-									.img.ov-h
-										img.ofcv.lazyload.blur-up(data-src="./assets/images/products/"+i+".png", alt="")
-									figcaption
-										h5.lcl.lcl-1.fw-700.tt-u.ta-c Lorem Ipsum is simply
+					.item-category-product-level-3-block-3.col-lg-4.col-sm-6.wow.fadeIn(data-wow-delay=".4s")
+						.block-item-general
+							.item-product
+								a(href="danh-muc-san-pham-cap-4.html")
+									figure.hover-style-1
+										.img.ov-h
+											img.ofcv.lazyload.blur-up(data-src="./assets/images/products/"+i+".png", alt="")
+										figcaption
+											h5.lcl.lcl-1.fw-700.tt-u.ta-c Lorem Ipsum is simply
 		.description
 			.ckeditor.desc-category-product-level-3-block-3
 				h3 Lorem Ipsum is simply dummy text of the printing and typesetting industry

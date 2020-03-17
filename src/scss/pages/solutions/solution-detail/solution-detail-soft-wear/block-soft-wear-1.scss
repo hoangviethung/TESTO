@@ -1,0 +1,26 @@
+.block-1{
+	margin-left: auto;
+	margin-bottom: 100px;
+	margin-top: 70px;
+	.description{
+		padding: 0 138px;
+		.ckeditor{
+			max-height: 140px;
+			overflow: hidden;
+			&.desc-solution-block-1{
+				p{
+					font-size: 16px;
+				}
+			}
+			@media(max-width: 1024.98px){
+				max-height: 150px;
+			}
+		}
+		@media(max-width: 1438.98px){
+			padding: 0;
+		}
+	}
+	@media(max-width: 1024.98px){
+		margin-bottom: 50px;
+	}
+}

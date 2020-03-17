@@ -1,0 +1,14 @@
+extends _components/_layout/_layout.pug
+
+block var
+	- let title = 'Chi chiết giải pháp sản phẩm';
+	- let bodyClass = 'solution-detail-product-page';
+
+block banner,breadcrumb
+	include ./_components/_layout/_breadcrumb
+block main
+	// TRANG CHI TIẾT GIẢI PHÁP SẢN PHẨM
+	include ./_components/solutions/solution-detail/solution-detail-product/block-1.pug
+	include ./_components/solutions/solution-detail/solution-detail-product/block-2.pug
+	include ./_components/solutions/solution-detail/solution-detail-product/block-3.pug
+block scripts
