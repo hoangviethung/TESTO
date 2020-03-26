@@ -1,4 +1,4 @@
-.block-2{
+.solution-soft-wear-2{
 	margin-left: auto;
 	margin-bottom: 130px;
 	.list-product{
@@ -23,7 +23,7 @@
 			}
 			.desc{
 				max-height: 75px;
-				overflow: hidden;
+				overflow-y: hidden;
 				@media(max-width: 768.98px){
 					max-height: 65px;
 				}
