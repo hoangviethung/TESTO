@@ -1,0 +1,18 @@
+.block-solution-product-3 {
+	margin-left  : auto;
+	margin-bottom: 50px;
+
+	.block-item-solution {
+		padding: 0 200px;
+
+		@media(max-width: 1438.98px) {
+			padding: 0;
+		}
+
+		@media(max-width: 768.98px) {
+			.item-product {
+				margin-bottom: 25px;
+			}
+		}
+	}
+}

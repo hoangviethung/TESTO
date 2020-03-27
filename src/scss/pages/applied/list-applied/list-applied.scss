@@ -11,26 +11,23 @@
 		padding   : 0 138px;
 	}
 
-	.item-applied {
-		margin-bottom: 45px;
+	.item-product {
+		figure {
+			.img {
+				height: 375px;
+			}
 
-		.block-item-general {
-			figure {
-				.img {
-					height: 375px;
-				}
-
-				figcaption {
-					h5 {
-						line-height: 70px;
-					}
+			figcaption {
+				h5 {
+					line-height: 70px;
 				}
 			}
 		}
+	}
 
-		.description {
-			margin-top: 10px;
-		}
+	.description {
+		margin-top   : 10px;
+		margin-bottom: 45px;
 	}
 
 	@media (max-width: 1439.98px) {
@@ -44,16 +41,16 @@
 			width: 100%;
 		}
 
-		.item-applied {
-			margin-bottom: 20px;
-
-			.block-item-general {
-				figure {
-					.img {
-						height: 290px;
-					}
+		.item-product {
+			figure {
+				.img {
+					height: 290px;
 				}
 			}
+		}
+
+		.description {
+			margin-bottom: 20px;
 		}
 	}
 

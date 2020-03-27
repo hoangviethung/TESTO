@@ -5,9 +5,10 @@
 	@import 'block-3';
 	@import 'block-4';
 	@import 'block-5';
+
 	@media (max-width: 1024.98px) {
 		margin-top: 40px;
 	}
 }
-@import 'solution-detail-product/main';
-@import 'solution-detail-soft-wear/main';
+
+@import 'solution-detail-product__soft-wear/_main';

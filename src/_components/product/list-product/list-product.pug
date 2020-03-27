@@ -15,15 +15,16 @@ section.list-product
 				h3.tt-u.fw700.color-gray sản phẩm
 			.row
 				-for(i=1;i<10;i++)
-					.item-product.col-lg-4.col-sm-6.wow.fadeIn(data-wow-delay=".2s")
-						a(href="danh-muc-san-pham-cap-2.html")
-							figure.hover-style-1
-								.img.ov-h
-									img.ofcv.lazyload.blur-up(data-src="./assets/images/products/"+i+".png", alt="alt")
-								figcaption
-									h5.lcl.lcl-1.fw-700.tt-u Lorem Ipsum is simply
-									p.lcl.lcl-2.fw-300 Lorem Ipsum is simply dummy text of the printing and mak typesetting industry. Lorem Ipsum has been the made.
-								button.btn.view-more.fw-700.tt-u xem thêm
+					.col-lg-4.col-sm-6.wow.fadeIn(data-wow-delay=".2s")
+						.item-product
+							a(href="danh-muc-san-pham-cap-2.html")
+								figure.hover-style-1
+									.img.ov-h
+										img.ofcv.lazyload.blur-up(data-src="./assets/images/products/"+i+".png", alt="alt")
+									figcaption
+										h5.lcl.lcl-1.fw-700.tt-u Lorem Ipsum is simply
+										p.lcl.lcl-2.fw-300 Lorem Ipsum is simply dummy text of the printing and mak typesetting industry. Lorem Ipsum has been the made.
+									button.btn.view-more.fw-700.tt-u xem thêm
 		.read-more
 			a(href="#")
 				img(src="./assets/icons/read-more-button.svg", alt="alt")
