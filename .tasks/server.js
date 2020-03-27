@@ -21,7 +21,7 @@ import {
 	cssTask
 } from "./css"
 import {
-	copyAssets
+	copyAssets,
 } from "./copy";
 import {
 	cleanAssets

@@ -11,6 +11,12 @@ const copyAssets = () => {
 		.pipe(dest("_dist/assets"))
 };
 
+const copyFavicon = () => {
+	return src("src/assets/favicon.ico", {
+		})
+		.pipe(dest("_dist"));
+}
+
 const copyFonts = () => {
 	let vendors = JSON.parse(readFileSync("_vendors.json"));
 	let fonts = vendors.fonts;
@@ -22,5 +28,6 @@ const copyFonts = () => {
 
 module.exports = {
 	copyAssets,
-	copyFonts
+	copyFavicon,
+	copyFonts,
 };
