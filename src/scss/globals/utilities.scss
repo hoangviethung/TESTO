@@ -574,6 +574,7 @@ body {
 
 [data-gjs-type="wrapper"] {
 	.list-item {
+		width           : 100%;
 		outline         : 3px solid #3b97e3 !important;
 		background-color: rgba(#3b97e3, .3);
 		display         : flex;
