@@ -1,8 +1,8 @@
 .c-t-2 {
 	margin-bottom: 50px;
 
-	.list-item {
-		margin: 0 138px;
+	.list-item-product {
+		padding: 0 138px;
 
 		.row {
 			margin-right: -30px;
@@ -10,7 +10,7 @@
 
 			.item {
 				padding-left: 30px;
-
+				padding-right: 30px;
 				@media(max-width: 1024.98px) {
 					padding-left : 0;
 					padding-right: 0;
@@ -20,6 +20,12 @@
 				@media(max-width: 769px) {
 					padding-right: 0;
 				}
+				.img{
+					width: 100%;
+					img{
+						width: 100%;
+					}
+				}
 			}
 
 			@media(max-width: 1025px) {
@@ -28,7 +34,7 @@
 		}
 
 		@media(max-width: 1438.98px) {
-			margin: 0px;
+			padding: 0px;
 		}
 	}
 

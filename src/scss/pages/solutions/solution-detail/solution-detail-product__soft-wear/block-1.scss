@@ -5,8 +5,7 @@
 	.description{
 		padding: 0 138px;
 		.ckeditor{
-			max-height: 140px;
-			overflow: hidden;
+			height: auto;
 			&.desc-product-solution-block-11{
 				p{
 					font-size: 16px;

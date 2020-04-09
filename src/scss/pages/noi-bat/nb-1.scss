@@ -83,10 +83,9 @@
 			.content {
 				max-width: 630px;
 				margin: 0 auto;
-				padding-left: 20px;
+				padding-left: 30px;
+				padding-right: 30px;
 				.desc {
-					max-height: 370px;
-					overflow: hidden;
 					margin-bottom: 15px;
 
 					.title {
@@ -116,6 +115,10 @@
 								font-size: 14px;
 							}
 						}
+					}
+					.ckeditor{
+						max-height: 242px;
+						overflow-y: auto;
 					}
 					.text-content{
 						max-width: 630px;

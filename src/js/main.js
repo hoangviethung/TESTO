@@ -438,7 +438,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const tabInformationDetail = new Tab('.block-tab-information-detail');
 	// HOÀNG JS
 	aboutMember();
-	newBanner();
+	// newBanner();
 	ajaxForm();
 	responText();
 	showBackToTop();
