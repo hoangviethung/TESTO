@@ -1,12 +1,13 @@
 .index-5 {
 	.content {
-		max-width: 665px;
-		width    : 100%;
+		max-width  : 665px;
+		width      : 100%;
 		margin-left: auto;
+
 		.desc {
 			margin-top   : 50px;
 			max-height   : 275px;
-			overflow     : hidden;
+			overflow     : auto;
 			margin-bottom: 15px;
 		}
 	}
@@ -34,6 +35,7 @@
 
 			.desc {
 				margin-top: 25px;
+				max-height: 115px;
 			}
 		}
 	}
@@ -46,6 +48,7 @@
 			.desc {
 				margin-top   : 10px;
 				margin-bottom: 10px;
+				max-height   : unset;
 			}
 		}
 	}

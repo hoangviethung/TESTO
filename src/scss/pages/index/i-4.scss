@@ -23,6 +23,11 @@
 		.content {
 			max-width: 535px;
 			margin   : 0 auto;
+
+			.desc {
+				max-height: 350px;
+				overflow  : auto;
+			}
 		}
 	}
 
@@ -37,6 +42,15 @@
 	@media (max-width: 1024.98px) {
 		.img {
 			height: 320px;
+		}
+
+		.box-right {
+
+			.content {
+				.desc {
+					max-height: 150px;
+				}
+			}
 		}
 	}
 
