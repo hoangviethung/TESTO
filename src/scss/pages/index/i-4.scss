@@ -72,6 +72,10 @@
 			.content {
 				max-width: 100%;
 
+				.desc {
+					max-height: unset;
+				}
+
 				.block-title {
 					margin-bottom: 10px;
 				}

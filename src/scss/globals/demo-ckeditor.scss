@@ -65,33 +65,15 @@
             }
         }
         @media (max-width: 1850px) {
-            p {
-                overflow: hidden;
-                display: -webkit-box;
-                text-overflow: ellipsis;
-                -webkit-box-orient: vertical;
-                -webkit-line-clamp: 3;
-            }
             ul {
                 margin-top: 15px;
             }
         }
         @media (max-width: 1440px) {
-            p {
-                -webkit-line-clamp: 2;
-            }
             ul {
                 li {
                     margin-bottom: 10px;
                 }
-            }
-        }
-        @media (max-width: 1024.98px) {
-            p {
-                -webkit-line-clamp: 4;
-            }
-            ul {
-                display: none;
             }
         }
         @media (max-width: 767.98px) {
@@ -111,11 +93,6 @@
         }
         @media (max-width: 1024.98px) {
             p {
-                overflow: hidden;
-                text-overflow: ellipsis;
-                display: -webkit-box;
-                -webkit-box-orient: vertical;
-                -webkit-line-clamp: 2;
                 margin-bottom: 5px;
             }
         }
