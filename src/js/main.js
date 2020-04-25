@@ -217,14 +217,14 @@ const toggleMenuMobile = () => {
 // Form search
 function search_form() {
 	$('header').each(function() {
-		$('.search').click(function(){
+		$('.search').click(function() {
 			$('.search-form').slideToggle(500);
 		})
 	})
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 0) {
-            $('.search-form').slideUp();
-        }
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 0) {
+			$('.search-form').slideUp();
+		}
 	});
 }
 const menuMutipLevel = () => {
@@ -274,10 +274,10 @@ const filterMobile = () => {
 			$(this).siblings('.filter-option-parent').find('.filter-option-container').slideToggle();
 			$(this).siblings('.filter-option-parent').find('.filter-option-container .filter-option .filter-entries').slideUp();
 		});
-		$('.mobile-filter-open').on('click', function(){
+		$('.mobile-filter-open').on('click', function() {
 			$('.option-title').not(this).find('.filter-down').removeClass('active-filter');
 		});
-		$('.option-title').on('click', function(){
+		$('.option-title').on('click', function() {
 			$(this).siblings('.filter-entries').slideToggle();
 			$(this).find('.filter-down').toggleClass('active-filter');
 			$('.option-title').not(this).find('.filter-down').removeClass('active-filter');
@@ -319,9 +319,9 @@ function aboutMember() {
 				slidesPerView: 3,
 				spaceBetween: 10,
 			},
-			576:{
+			576: {
 				slidesPerView: 3,
-				spaceBetween:10,
+				spaceBetween: 10,
 			},
 			375: {
 				slidesPerView: 1,
@@ -348,31 +348,34 @@ function newBanner() {
 }
 
 function ajaxForm() {
-	$('form button').on('click', function(e) {
+	$('.contact-section form button').on('click', function(e) {
 		e.preventDefault();
 		const url = $(this).attr('data-url');
-		const name = $('#name').val();
-		const phone = $('#phone').val();
-		const email = $('#email').val();
-		const content = $('#content').val();
-		$.ajax({
-			type: "POST",
-			url: url,
-			data: {
+		const name = $('input[name="Name"]').val();
+		const phone = $('input[name="Phone"]').val();
+		const email = $('input[name="Email"]').val();
+		const content = $('textarea[name="Content"]').val();
+		if ($(".contact-section form").valid() === true) {
+			$.ajax({
+				type: "POST",
 				url: url,
-				name: name,
-				phone: phone,
-				email: email,
-				content: content
-			},
-			success: function(res) {
-				if (res.Code === 200) {
-					alert('Thành công');
-				} else {
-					alert('Thất bại');
+				data: {
+					url: url,
+					Name: name,
+					Phone: phone,
+					Email: email,
+					Content: content
+				},
+				success: function(res) {
+					if (res.Code === 200) {
+						alert(res.Message);
+					} else {
+						alert(res.Message);
+					}
 				}
-			}
-		});
+			});
+		}
+		console.log('Kết quả kiểm tra điều kiện là:' + ' ' + $(".contact-section form").valid());
 	});
 }
 
