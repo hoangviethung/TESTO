@@ -355,7 +355,8 @@ function ajaxForm() {
 		const phone = $('input[name="Phone"]').val();
 		const email = $('input[name="Email"]').val();
 		const content = $('textarea[name="Content"]').val();
-		if ($(".contact-section form").valid() === true) {
+		const Recapcha = $('input[name="g-recaptcha-response"]').val();
+		// if ($(".contact-section form").valid() === true) {
 			$.ajax({
 				type: "POST",
 				url: url,
@@ -364,7 +365,8 @@ function ajaxForm() {
 					Name: name,
 					Phone: phone,
 					Email: email,
-					Content: content
+					Content: content,
+					Recapcha: Recapcha,
 				},
 				success: function(res) {
 					if (res.Code === 200) {
@@ -374,8 +376,8 @@ function ajaxForm() {
 					}
 				}
 			});
-		}
-		console.log('Kết quả kiểm tra điều kiện là:' + ' ' + $(".contact-section form").valid());
+		// }
+		// console.log('Kết quả kiểm tra điều kiện là:' + ' ' + $(".contact-section form").valid());
 	});
 }
 

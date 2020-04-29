@@ -6,7 +6,10 @@ section.lh-1
 					.form-title
 						h2 LIÊN HỆ VỚI CHÚNG TÔI
 					form(action="#")
-						input.form-control#name(name="Name" type="text" placeholder="Họ & tên")
+						input(hidden value="hello" name="g-recaptcha-response")
+						input.form-control.input-validation-error#name(name="Name" type="text" placeholder="Họ & tên")
+						span.field-validation-valid
+							span.field-validation-error Lỗi
 						input.form-control#email(name="Email" type="text" placeholder="Email")
 						input.form-control#phone(name="Phone" type="text" placeholder="Số điện thoại")
 						textarea.form-control#content(name="Content", cols="30", rows="10" placeholder="Nội dung")

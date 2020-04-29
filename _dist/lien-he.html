@@ -137,7 +137,8 @@
 									<h2>LIÊN HỆ VỚI CHÚNG TÔI</h2>
 								</div>
 								<form action="#">
-									<input class="form-control" id="name" name="Name" type="text" placeholder="Họ &amp; tên">
+									<input hidden value="hello" name="g-recaptcha-response">
+									<input class="form-control input-validation-error" id="name" name="Name" type="text" placeholder="Họ &amp; tên"><span class="field-validation-valid"><span class="field-validation-error">Lỗi</span></span>
 									<input class="form-control" id="email" name="Email" type="text" placeholder="Email">
 									<input class="form-control" id="phone" name="Phone" type="text" placeholder="Số điện thoại">
 									<textarea class="form-control" id="content" name="Content" cols="30" rows="10" placeholder="Nội dung"></textarea>
