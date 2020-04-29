@@ -347,27 +347,38 @@ function newBanner() {
 	});
 }
 
+const getFormData = (obj) => {
+	let formData = new FormData();
+	for (let field in obj) {
+		formData.append(field, obj[field])
+	}
+	return formData;
+}
+
 function ajaxForm() {
 	$('.contact-section form button').on('click', function(e) {
 		e.preventDefault();
+
 		const url = $(this).attr('data-url');
 		const name = $('input[name="Name"]').val();
 		const phone = $('input[name="Phone"]').val();
 		const email = $('input[name="Email"]').val();
 		const content = $('textarea[name="Content"]').val();
-		const Recapcha = $('input[name="g-recaptcha-response"]').val();
-		// if ($(".contact-section form").valid() === true) {
+		const recapcha = $('input[name="g-recaptcha-response"]').val();
+		let newFormData = new FormData();
+		newFormData.append('Name', name);
+		newFormData.append('Phone', phone);
+		newFormData.append('Email', email);
+		newFormData.append('Content', content);
+		newFormData.append('g-recaptcha-response', recapcha);
+		console.log(newFormData);
+		if ($(".contact-section form").valid() === true) {
 			$.ajax({
 				type: "POST",
 				url: url,
-				data: {
-					url: url,
-					Name: name,
-					Phone: phone,
-					Email: email,
-					Content: content,
-					Recapcha: Recapcha,
-				},
+				data: newFormData,
+				processData: false,
+				contentType: false,
 				success: function(res) {
 					if (res.Code === 200) {
 						alert(res.Message);
@@ -376,8 +387,8 @@ function ajaxForm() {
 					}
 				}
 			});
-		// }
-		// console.log('Kết quả kiểm tra điều kiện là:' + ' ' + $(".contact-section form").valid());
+		}
+		console.log('Kết quả kiểm tra điều kiện là:' + ' ' + $(".contact-section form").valid());
 	});
 }
 
