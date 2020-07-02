@@ -7,18 +7,18 @@
 
 	// 2 SLIDER PRDUCT DETAIL
 	.slider-product-detail {
-		display  : flex;
+		display: flex;
 		flex-wrap: wrap;
 
 		.review-image {
 			-ms-flex-preferred-size: 0;
-			-ms-flex-positive      : 1;
-			-webkit-box-flex       : 1;
-			flex-basis             : 0;
-			flex-grow              : 1;
-			max-width              : 100%;
+			-ms-flex-positive: 1;
+			-webkit-box-flex: 1;
+			flex-basis: 0;
+			flex-grow: 1;
+			max-width: 100%;
 
-			position    : relative;
+			position: relative;
 			margin-right: 30px;
 
 			.img {
@@ -27,13 +27,13 @@
 		}
 
 		.thumbnail-image {
-			-ms-flex        : 0 0 100%;
+			-ms-flex: 0 0 100%;
 			-webkit-box-flex: 0;
-			flex            : 0 0 260px;
-			max-width       : 260px;
+			flex: 0 0 260px;
+			max-width: 260px;
 
 			.swiper-slide {
-				cursor : pointer;
+				cursor: pointer;
 				opacity: .5;
 
 				&.swiper-slide-thumb-active {
@@ -44,15 +44,15 @@
 
 		.swiper-button-next,
 		.swiper-button-prev {
-			width     : 70px;
-			height    : 70px;
+			width: 70px;
+			height: 70px;
 			margin-top: 0;
-			transform : translateY(-50%);
+			transform: translateY(-50%);
 
 			&:after {
-				content        : '';
-				width          : 100%;
-				height         : 100%;
+				content: '';
+				width: 100%;
+				height: 100%;
 				background-size: cover;
 			}
 		}
@@ -76,7 +76,7 @@
 
 		.name {
 			margin-bottom: 30px;
-			color        : #545454;
+			color: #545454;
 		}
 
 		.description {
@@ -87,27 +87,27 @@
 
 	.mobile-list-tab-open {
 		background-color: #ffffff;
-		border          : 1px solid #648798;
-		padding         : 12px;
-		line-height     : 24px;
+		border: 1px solid #648798;
+		padding: 12px;
+		line-height: 24px;
 	}
 
 	// TAB THÔNG TIN CHI TIẾT SẢN PHẨM
 	.block-tab-information-detail {
-		width : 1088px;
+		width: 1088px;
 		margin: 0 auto;
 
 		.list-tab {
-			display        : flex;
+			display: flex;
 			justify-content: center;
 			list-style-type: none;
-			padding-left   : 0;
+			padding-left: 0;
 
 			.item {
-				position      : relative;
-				margin-right  : 75px;
-				color         : #707070;
-				font-weight   : 700;
+				position: relative;
+				margin-right: 75px;
+				color: #707070;
+				font-weight: 700;
 				text-transform: uppercase;
 				padding-bottom: 5px;
 
@@ -116,13 +116,13 @@
 				}
 
 				&:after {
-					content   : '';
-					position  : absolute;
-					width     : 0;
-					height    : 2px;
-					bottom    : 0;
-					left      : 50%;
-					transform : translateX(-50%);
+					content: '';
+					position: absolute;
+					width: 0;
+					height: 2px;
+					bottom: 0;
+					left: 50%;
+					transform: translateX(-50%);
 					background: #E4B354;
 					transition: .3s all ease-in-out;
 				}
@@ -144,6 +144,77 @@
 		}
 	}
 
+	.accessori--title {
+		font-size: 18px;
+		color: map-get($mau, main-2);
+		font-weight: 700;
+		margin: 15px 0;
+	}
+
+	.accessori--item {
+		display: flex;
+		flex-wrap: wrap;
+
+		+.accessori--item {
+			margin-top: 15px;
+		}
+
+		@media (min-width: 1025px) {
+			&:hover {
+				.accessori--name {
+					color: map-get($mau, main);
+				}
+			}
+		}
+	}
+
+	.accessori--img {
+		-ms-flex: 0 0 100%;
+		-webkit-box-flex: 0;
+		flex: 0 0 30%;
+		max-width: 30%;
+		padding: 15px;
+		border: 1px solid map-get($mau, main-2);
+
+		@media (max-width: 575.98px) {
+			padding: 5px;
+		}
+	}
+
+	.accessori--content {
+		-ms-flex-preferred-size: 0;
+		-ms-flex-positive: 1;
+		-webkit-box-flex: 1;
+		flex-basis: 0;
+		flex-grow: 1;
+		max-width: 100%;
+		padding-left: 25px;
+
+		@media (max-width: 575.98px) {
+			padding-left: 10px;
+		}
+	}
+
+	.accessori--name {
+		font-size: 18px;
+		font-weight: 700;
+		color: map-get($mau, main-2);
+		transition: .3s all ease-in-out;
+
+		@media (max-width: 575.98px) {
+			font-size: 16px;
+		}
+	}
+
+	.accessori--orderNumber {
+		font-size: 14px;
+		color: map-get($mau, main-2);
+
+		@media (max-width: 575.98px) {
+			font-size: 12px;
+		}
+	}
+
 	// REST ALL CUSTOM PADDING
 	@media (max-width: 1439.98px) {
 		.slider-product-detail {
@@ -154,7 +225,7 @@
 			}
 
 			.thumbnail-image {
-				flex     : 0 0 160px;
+				flex: 0 0 160px;
 				max-width: 160px;
 			}
 		}
@@ -167,7 +238,7 @@
 
 		// TAB THÔNG TIN CHI TIẾT SẢN PHẨM
 		.block-tab-information-detail {
-			width : 100%;
+			width: 100%;
 			margin: 0;
 		}
 	}
@@ -193,17 +264,17 @@
 
 		.block-tab-information-detail {
 			.list-tab {
-				display       : none;
+				display: none;
 				flex-direction: column;
-				border-left   : 1px solid #648798;
-				border-right  : 1px solid #648798;
-				border-bottom : 1px solid #648798;
+				border-left: 1px solid #648798;
+				border-right: 1px solid #648798;
+				border-bottom: 1px solid #648798;
 
 				.item {
-					margin-right  : 0;
-					font-weight   : 300;
-					padding       : 12px;
-					border-bottom : 1px solid #dedede;
+					margin-right: 0;
+					font-weight: 300;
+					padding: 12px;
+					border-bottom: 1px solid #dedede;
 					text-transform: none;
 
 					&:last-child {
@@ -233,10 +304,10 @@
 
 		.slider-product-detail {
 			.review-image {
-				margin-right    : 0;
-				-ms-flex        : 0 0 100%;
+				margin-right: 0;
+				-ms-flex: 0 0 100%;
 				-webkit-box-flex: 0;
-				flex            : 0 0 100%;
+				flex: 0 0 100%;
 
 				.img {
 					height: 250px;
@@ -245,8 +316,8 @@
 
 			.thumbnail-image {
 				margin-top: 10px;
-				flex      : 0 0 100%;
-				max-width : 100%;
+				flex: 0 0 100%;
+				max-width: 100%;
 			}
 
 			.swiper-button-next,
